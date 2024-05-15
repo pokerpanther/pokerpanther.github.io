@@ -1,1 +1,0 @@
-More deets about Khari
