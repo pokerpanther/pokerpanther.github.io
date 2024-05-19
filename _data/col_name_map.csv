@@ -1,0 +1,12 @@
+var_name,display_name
+date,Date
+type,Type
+location,Location
+game_type,Game Type
+level_guarantee,Level/Guarantee
+duration_min,Duration (min)
+cash_in,Cash In
+cash_out,Cash Out
+net,Net
+place,Place
+bullets,Bullets
