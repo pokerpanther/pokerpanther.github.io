@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # ruby '2.7.8'
 
-gem 'jekyll', '3.8.5'
+gem "jekyll", "~> 4.2.2"
 gem 'rexml'
 gem "webrick", "~> 1.8"
 
