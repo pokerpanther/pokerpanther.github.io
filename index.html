@@ -2,7 +2,7 @@
 layout: default
 title: A sleek, modern Jekyll theme for personal websites.
 description: A sleek, modern Jekyll theme for personal websites. Personal is the perfect theme for developers, designers and other creatives.
-featured_image: /images/demo/home.jpg
+featured_image: /images/from_khari/home.jpg
 ---
 
 <section class="hero">
@@ -13,39 +13,17 @@ featured_image: /images/demo/home.jpg
 
 	<div class="wrap">
 
-		<h1>A sleek, modern Jekyll theme
-		for personal websites</h1>
-		<p>Personal is the perfect theme for developers, designers and other creatives.</p>
+		<h1>So how much money does a professional poker player <em>really</em> make?</h1>
+		<p>My name is Khari Hutchings, <em>aka the <strong>Poker Panther. </strong></em>In 2023 I quit my consulting job to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player they alwaus ask me the same question - so <strong>how much money do you <em>really</em> make?</strong>
+		</p>
 
-		{% include socials.html %}
+		<p><strong>Well, now you can take a look for yourselves.</strong></p>
+		<br>
+		<br>
 
-	</div>
-
-</section>
-
-<section class="listing">
-
-	<div class="wrap">
-
-		{% for project in site.projects reversed %}
-
-		<article class="post">
-
-			<div class="post__image-wrap">
-				<div class="post__image" style="background-image: url({{ project.featured_image | relative_url }})"></div>
-			</div>
-
-			<div class="post__content-wrap">
-				<div class="post__content">
-					<h2 class="post__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-					<p class="post__subtitle">{{ project.subtitle }}</p>
-					<p class="post__description">{{ project.description }}</p>
-				</div>
-			</div>
-
-		</article>
-
-		{% endfor %}
+		<a href="/results" class="button button--large">My Results</a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="/about" class="button button--large">My Journey</a>
 
 	</div>
 
