@@ -1,5 +1,6 @@
 ---
 title: Results
+featured_image: /images/from_khari/home.jpg
 ---
 
 <table id="results-table">
