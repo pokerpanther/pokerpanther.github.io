@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 .jekyll-cache/
 google_creds.json
+_data/results.yml
+
