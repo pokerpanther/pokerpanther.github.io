@@ -47,3 +47,4 @@ title: Results
         $('#results-table').DataTable();
     });
 </script>
+
