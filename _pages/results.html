@@ -1,0 +1,100 @@
+---
+title: Results
+featured_image: /images/from_khari/home.jpg
+---
+
+
+<div class="filter-container">
+    <button id="filter-type-btn">Filter by Type</button>
+    <div id="filter-type-dropdown" class="filter-dropdown"></div>
+
+    <button id="filter-location-btn">Filter by Location</button>
+    <div id="filter-location-dropdown" class="filter-dropdown"></div>
+</div>
+
+<table id="results-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Level Guarantee</th>
+            <th>Cash In</th>
+            <th>Cash Out</th>
+            <th>Net</th>
+            <th>Place</th>
+            <th>Bullets</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tournament in site.data.results %}
+        <tr>
+            <td>{{ tournament.date }}</td>
+            <td>{{ tournament.type }}</td>
+            <td>{{ tournament.location }}</td>
+            <td>{{ tournament.level_guarantee }}</td>
+            <td>{{ tournament.cash_in }}</td>
+            <td>{{ tournament.cash_out }}</td>
+            <td>{{ tournament.net }}</td>
+            <td>{{ tournament.place }}</td>
+            <td>{{ tournament.bullets }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script>
+    $(window).on('load', function () {
+        // Function to initialize the DataTable and create filters
+        function initializeDataTable() {
+            var table = $('#results-table').DataTable();
+            // Function to create filter dropdowns
+            function createFilterDropdown(columnIndex, buttonId, dropdownId) {
+                var columnData = table.column(columnIndex).data().toArray();
+                var uniqueValues = [...new Set(columnData)].sort();
+                var dropdown = $(dropdownId);
+                uniqueValues.forEach(function (value) {
+                    dropdown.append('<label><input type="checkbox" value="' + value + '"> ' + value + '</label>');
+                });
+
+                $(buttonId).on('click', function (e) {
+                    dropdown.toggle();
+                    dropdown.css({
+                        top: $(this).position().top + $(this).outerHeight(),
+                        left: $(this).position().left
+                    });
+                    e.stopPropagation();
+                });
+
+                dropdown.on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                $(document).on('click', function () {
+                    dropdown.hide();
+                });
+
+                dropdown.find('input').on('change', function () {
+                    var selectedValues = dropdown.find('input:checked').map(function () {
+                        return this.value;
+                    }).get();
+
+                    if (selectedValues.length > 0) {
+                        table.column(columnIndex).search(selectedValues.join('|'), true, false).draw();
+                    } else {
+                        table.column(columnIndex).search('').draw();
+                    }
+                });
+            }
+
+            createFilterDropdown(1, '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
+            createFilterDropdown(2, '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
+        }
+
+        // Initialize DataTable and filters
+        initializeDataTable();
+    });
+</script>
+
