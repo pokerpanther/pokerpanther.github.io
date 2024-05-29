@@ -2,6 +2,7 @@ import gspread
 import yaml
 import re
 import csv
+import pandas as pd
 
 results_wkbk_url = "https://docs.google.com/spreadsheets/d/17Wa4KKc8OK_vU8T4SrZxivgjhVL9_PmW30AxQiZH5jM/edit#gid=0"
 results_sheet_num = 0 # first sheet
@@ -25,6 +26,29 @@ def to_snake_case(input_string):
 
     return snake_case_str
 
+
+def calc_stats(df, type): 
+    """ takes in a pandas df and a string representing 
+    the tournament type; returns a dict with desired stats 
+    """
+
+    total_profit = df['net'].sum()
+    num_buy_ins = df['bullets'].sum()
+    total_cash_in = df['cash_in'].sum()
+    total_cash_out = df['cash_out'].sum()
+    roi = 100 * ((total_cash_out - total_cash_in) / total_cash_in)
+    ave_buy_in =  total_cash_in / num_buy_ins
+
+    stats = {
+        "type":         type,
+        "total_profit": round(total_profit, 2), 
+        "num_buy_ins":  num_buy_ins,
+        "roi":          round(roi, 2),
+        "ave_buy_in":   round(ave_buy_in, 2)
+    }
+
+    return stats
+
 gc = gspread.service_account(filename=local_creds_path)
 wkbk = gc.open_by_url(results_wkbk_url)
 sheet = wkbk.get_worksheet(results_sheet_num) 
@@ -42,3 +66,23 @@ with open('./_data/col_name_map.csv', 'w', newline='') as file:
     for var_name, display_name in zip(col_names, orig_col_names):
         writer.writerow([var_name, display_name])
 
+all_results = pd.DataFrame(data_dicts)
+
+# convert numerical cols to number types
+for col in ['net', 'cash_in', 'cash_out']: 
+    all_results[col] = all_results[col].str.replace('[$,]', '', regex=True).astype(float)
+for col in ['bullets', 'duration_min']:
+    all_results[col] = all_results[col].astype(int)
+
+online_results = all_results[all_results["type"].str.strip().str.lower() == "online"].copy()
+live_results = all_results[all_results["type"].str.strip().str.lower() == "live"].copy()
+
+online_stats = calc_stats(online_results, "Online")
+live_stats = calc_stats(live_results, "Live")
+overall_stats = calc_stats(all_results, "All")
+
+with open('./_data/stats.csv', 'w') as file:
+    writer = csv.writer(file)
+    writer.writerow(list(online_stats.keys()))
+    for stats in [online_stats, live_stats, overall_stats]:
+        writer.writerow(list(stats.values()))
