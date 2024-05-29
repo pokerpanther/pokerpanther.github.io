@@ -102,6 +102,22 @@ $p-weight: {{ site.data.settings.font_settings.p.weight }};
 $p-spacing: {{ site.data.settings.font_settings.p.letter_spacing }}em;
 $p-lineheight: {{ site.data.settings.font_settings.p.line_height }};
 
+$th-small: {{ site.data.settings.font_settings.th.small_size }}px;
+$th-medium: {{ site.data.settings.font_settings.th.medium_size }}px;
+$th-large: {{ site.data.settings.font_settings.th.large_size }}px;
+$th-weight: {{ site.data.settings.font_settings.th.weight }};
+$th-spacing: {{ site.data.settings.font_settings.th.letter_spacing }}em;
+$th-lineheight: {{ site.data.settings.font_settings.th.line_height }};
+$th-padding: {{ site.data.settings.font_settings.th.padding }};
+
+$td-small: {{ site.data.settings.font_settings.td.small_size }}px;
+$td-medium: {{ site.data.settings.font_settings.td.medium_size }}px;
+$td-large: {{ site.data.settings.font_settings.td.large_size }}px;
+$td-weight: {{ site.data.settings.font_settings.td.weight }};
+$td-spacing: {{ site.data.settings.font_settings.td.letter_spacing }}em;
+$td-lineheight: {{ site.data.settings.font_settings.td.line_height }};
+$td-padding: {{ site.data.settings.font_settings.td.padding }};
+
 $blockquote-small: {{ site.data.settings.font_settings.blockquote.small_size }}px;
 $blockquote-medium: {{ site.data.settings.font_settings.blockquote.medium_size }}px;
 $blockquote-large: {{ site.data.settings.font_settings.blockquote.large_size }}px;
