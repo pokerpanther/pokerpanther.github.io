@@ -3,6 +3,7 @@ title: Results
 featured_image: /images/from_khari/home.jpg
 ---
 
+{% include results_stats.html %}
 
 <div class="filter-container">
     <button id="filter-type-btn">Filter by Type</button>
@@ -92,9 +93,22 @@ featured_image: /images/from_khari/home.jpg
             createFilterDropdown(1, '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
             createFilterDropdown(2, '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
         }
+        function numberWithCommas(value) {
+            return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+
+        function updateNumericValues() {
+            const myNumber = document.querySelectorAll('.dollar-amnt');
+            myNumber.forEach((e) => {
+                const numericValue = e.textContent;
+                const formattedValue = numberWithCommas(numericValue);
+                e.textContent = formattedValue;
+            });
+        }
 
         // Initialize DataTable and filters
         initializeDataTable();
+        updateNumericValues();
     });
 </script>
 
