@@ -3,20 +3,15 @@ title: About me
 description: Personal is the perfect theme for developers, designers and other creatives.
 featured_image: /images/from_khari/home.jpg
 ---
-<script>
-    window.onload = function() {
-        // Get the height of the text container
-        var textHeight = document.querySelector('.text-container').clientHeight;
-        // Set the height of the image to match the text height
-        document.querySelector('.smiley').style.height = textHeight + 'px';
-    };
-</script>
 
 <div style="display: flex; align-items: center;">
-    <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 200px; margin-right: 20px;" class="smiley">
+
     <div>
         <h2> My name is Khari Hutchings, aka The Poker Panther </h2>
-        <p>Hello and welcome! My name is Khari Hutchings, in 2023 I quit my consulting job in New York City and moved to Florida to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player, the first question they ask me is always the same - so how much money do you really make?</p>
+        <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 300px; margin: 20px 20px 20px 0; float: left; max-width: 50%;">
+
+        <p>Hello and welcome! My name is Khari Hutchings, in 2023 I quit my consulting job in New York City and moved to Florida to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player, the first question they ask me is always the same - so how much money do you really make?
+        </p>
         <p>I wanted to create this website to show exactly that, the finances behind a professional poker player. On this website I’ll track my poker tournament results in REAL time on my journey to earn $100,000 from poker tournaments in 2024. I want to offer those who are following my progress the never-before-seen behind the scenes information of what the finances of a poker tournament grinder look like.</p>
     </div>
 </div>
@@ -27,11 +22,14 @@ featured_image: /images/from_khari/home.jpg
 
 <div style="display: flex; align-items: center;">
     <div>
+
         <p>I first started playing poker on Facebook poker in high school for play money - though I must say, I was crushing it. I’ve been a fan of card games my entire life, and even used to play in Yu-Gi-Oh and Magic the Gathering tournaments in high school. My friends and I would play poker for fun in high school and college, but I didn’t start taking it more seriously until I graduated college.</p>
+
+        <img src="/images/from_khari/serious_landscape.jpg" alt="Image Description" style="width: 400px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">        
         <p>I had 6 months between college graduation and my first day as a consultant and devoted a lot of this time to studying and playing poker. Once I started work, I would play on evenings and on weekends where I could. Eventually I was making more and more money from poker, and figured I owed it to myself to take a shot at playing fulltime. If I failed, at least I would have a cool story out of it, right?</p>
         <p>I took a 6 month sabbatical from my job and spent most of it playing as many poker tournaments (with a bit of cash) as I possibly could. While it was a bit bumpy at the beginning to say the least, I was eventually able to get a bit of momentum going and decided to take the plunge into full time poker once the 6 month sabbatical was over.</p>
     </div>
-    <img src="/images/from_khari/serious_landscape.jpg" alt="Image Description" style="width: 200px; margin-left: 20px;">
+
 </div>
 
 ---
