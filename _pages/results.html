@@ -47,10 +47,14 @@ featured_image: /images/from_khari/home.jpg
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script>
-        $(window).on('load', function () {
+    var table = $('#results-table').DataTable();
+    function formatNumber(value) {
+        var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
+        return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(numberValue);
+    }
+    $(window).on('load', function () {
         // Function to initialize the DataTable and create filters
         function initializeDataTable() {
-            var table = $('#results-table').DataTable();
             // Function to create filter dropdowns
             function createFilterDropdown(columnIndex, buttonId, dropdownId) {
                 var columnData = table.column(columnIndex).data().toArray();
@@ -93,27 +97,20 @@ featured_image: /images/from_khari/home.jpg
             createFilterDropdown(1, '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
             createFilterDropdown(2, '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
         }
-function numberWithCommas(value) {
-            return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        }
-
-        function updateNumericValues() {
+        function updateDollarValues() {
             const myNumber = document.querySelectorAll('.dollar-amnt');
             myNumber.forEach((e) => {
                 const numericValue = e.textContent;
-                const formattedValue = numberWithCommas(numericValue);
-                e.textContent = formattedValue;
+                const formattedValue = formatNumber(numericValue);
+                e.textContent = "$" + formattedValue;
             });
         }
 
         // Initialize DataTable and filters
         initializeDataTable();
-        updateNumericValues();
+        updateDollarValues();
     });
-</script>
 
-<script>
-    const table = $('#results-table').DataTable();
     function getColumnIndices(table) {
         var headers = table.columns().header().toArray();
         var indices = {};
@@ -125,9 +122,11 @@ function numberWithCommas(value) {
         
         return indices;
     }
+    
+    var columnIndices = getColumnIndices(table);
+
     function updateStatistics() {
         var data = table.rows({ search: 'applied' }).data();
-        var columnIndices = getColumnIndices(table);
 
         var onlineProfit = 0, liveProfit = 0;
         var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
@@ -158,15 +157,15 @@ function numberWithCommas(value) {
         var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
         var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
 
-        $('#online-profit').text('$' + onlineProfit.toFixed(2));
-        $('#online-roi').text(onlineROI.toFixed(2) + '%');
+        $('#online-profit').text('$' + formatNumber(onlineProfit));
+        $('#online-roi').text(formatNumber(onlineROI) + '%');
         $('#online-num-buy-ins').text(onlineBullets);
-        $('#online-avg-buyin').text('$' + onlineAvgBuyIn.toFixed(2));
+        $('#online-avg-buyin').text('$' + formatNumber(onlineAvgBuyIn));
 
-        $('#live-profit').text('$' + liveProfit.toFixed(2));
-        $('#live-roi').text(liveROI.toFixed(2) + '%');
+        $('#live-profit').text('$' + formatNumber(liveProfit));
+        $('#live-roi').text(formatNumber(liveROI) + '%');
         $('#live-num-buy-ins').text(liveBullets);
-        $('#live-avg-buyin').text('$' + liveAvgBuyIn.toFixed(2));
+        $('#live-avg-buyin').text('$' + formatNumber(liveAvgBuyIn));
     }   
 
     table.on('draw.dt', function () {
