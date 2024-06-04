@@ -114,19 +114,31 @@ function numberWithCommas(value) {
 
 <script>
     const table = $('#results-table').DataTable();
+    function getColumnIndices(table) {
+        var headers = table.columns().header().toArray();
+        var indices = {};
+        
+        headers.forEach((header, index) => {
+            var headerText = $(header).text().trim();
+            indices[headerText] = index;
+        });
+        
+        return indices;
+    }
     function updateStatistics() {
         var data = table.rows({ search: 'applied' }).data();
+        var columnIndices = getColumnIndices(table);
 
         var onlineProfit = 0, liveProfit = 0;
         var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
         var liveCashIn = 0, liveCashOut = 0, liveBullets = 0;
 
         data.each(function (row) {
-            var type = row[1];
-            var cashIn = parseFloat(row[4].replace(/[^0-9.-]+/g, ""));
-            var cashOut = parseFloat(row[5].replace(/[^0-9.-]+/g, ""));
-            var net = parseFloat(row[6].replace(/[^0-9.-]+/g, ""));
-            var bullets = parseFloat(row[8]);
+            var type = row[columnIndices['Type']];
+            var cashIn = parseFloat(row[columnIndices['Cash In']].replace(/[^0-9.-]+/g, ""));
+            var cashOut = parseFloat(row[columnIndices['Cash Out']].replace(/[^0-9.-]+/g, ""));
+            var net = parseFloat(row[columnIndices['Net']].replace(/[^0-9.-]+/g, ""));
+            var bullets = parseFloat(row[columnIndices['Bullets']]);        
 
             if (type === 'Online') {
                 onlineProfit += net;
