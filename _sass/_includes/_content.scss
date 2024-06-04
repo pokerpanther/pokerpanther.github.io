@@ -139,77 +139,7 @@
 		overflow-x: auto;
 	}
 
-	table {
-		min-width: 600px;
-		border: 2px solid $text-dark-color;
 
-		thead {
-			background: $text-dark-color;
-			color: $background-color;
-			text-align: left;
-			font-weight: $bold-weight;
-
-			th {
-				font-weight: $bold-weight;
-			}
-		}
-
-		th {
-			padding: $th-padding;
-			font-size: $th-small;
-			font-weight: $th-weight;
-
-			@include mq(tabletp) {
-				padding: 15px;
-			}
-
-			@include mq(laptop) {
-				padding: 20px;
-				font-size: $th-medium;
-			}
-		}
-		td {
-			padding: $td-padding;
-			font-size: $td-small;
-			font-weight: $td-weight;
-
-			@include mq(tabletp) {
-				padding: 15px;
-			}
-
-			@include mq(laptop) {
-				padding: 20px;
-				font-size: $td-medium;
-			}
-		}		
-		tr {
-
-			&:nth-child(2n) {
-				background: $background-alt-color;
-			}
-		}
-	}
-	.filter-container {
-		position: relative;
-		margin-bottom: 20px;
-		display: flex;
-		justify-content: center; /* Center the buttons horizontally */
-		gap: 10px; /* Add space between buttons */
-	}
-	.filter-container button {
-		font-family: $body-font;
-	}		
-	.filter-dropdown {
-		display: none;
-		position: absolute;
-		background-color: white;
-		border: 1px solid #ccc;
-		z-index: 1000;
-	}
-	.filter-dropdown label {
-		display: block;
-		margin: 5px;
-	}
 	sup a.footnote {
 		display: inline-block;
 		margin-left: 5px;
