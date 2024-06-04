@@ -47,7 +47,7 @@ featured_image: /images/from_khari/home.jpg
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script>
-    var table = $('#results-table').DataTable();
+    var table = $('#results-table').DataTable({"pageLength": 25});
     function formatNumber(value) {
         var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
         return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(numberValue);
