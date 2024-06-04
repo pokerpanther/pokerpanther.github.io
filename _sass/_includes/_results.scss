@@ -181,3 +181,8 @@ table {
 .bold-text {
     font-weight: bold;
 }
+.dropdown-btn::after {
+    content: " \25BC"; 
+    font-size: 0.7em;  
+    margin-left: 4px;  
+}
