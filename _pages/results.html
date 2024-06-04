@@ -91,6 +91,8 @@ featured_image: /images/from_khari/home.jpg
                     } else {
                         table.column(columnIndex).search('').draw();
                     }
+                    // Toggle the selected-filter class based on checkbox state
+                    $(this).parent().toggleClass('bold-text', this.checked);                    
                 });
             }
 
@@ -122,7 +124,7 @@ featured_image: /images/from_khari/home.jpg
         
         return indices;
     }
-    
+
     var columnIndices = getColumnIndices(table);
 
     function updateStatistics() {
