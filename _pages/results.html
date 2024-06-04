@@ -52,6 +52,20 @@ featured_image: /images/from_khari/home.jpg
         var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
         return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(numberValue);
     }
+    function getColumnIndices(table) {
+        var headers = table.columns().header().toArray();
+        var indices = {};
+        
+        headers.forEach((header, index) => {
+            var headerText = $(header).text().trim();
+            indices[headerText] = index;
+        });
+        
+        return indices;
+    }
+
+    var columnIndices = getColumnIndices(table);
+
     $(window).on('load', function () {
         // Function to initialize the DataTable and create filters
         function initializeDataTable() {
@@ -96,8 +110,8 @@ featured_image: /images/from_khari/home.jpg
                 });
             }
 
-            createFilterDropdown(1, '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
-            createFilterDropdown(2, '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
+            createFilterDropdown(columnIndices['Type'], '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
+            createFilterDropdown(columnIndices['Location'], '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
         }
         function updateDollarValues() {
             const myNumber = document.querySelectorAll('.dollar-amnt');
@@ -113,19 +127,6 @@ featured_image: /images/from_khari/home.jpg
         updateDollarValues();
     });
 
-    function getColumnIndices(table) {
-        var headers = table.columns().header().toArray();
-        var indices = {};
-        
-        headers.forEach((header, index) => {
-            var headerText = $(header).text().trim();
-            indices[headerText] = index;
-        });
-        
-        return indices;
-    }
-
-    var columnIndices = getColumnIndices(table);
 
     function updateStatistics() {
         var data = table.rows({ search: 'applied' }).data();
