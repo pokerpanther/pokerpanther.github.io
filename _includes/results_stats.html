@@ -10,19 +10,19 @@
     {% for row in online_live %}
         <div class="container">
             <h2>{{row.type}} Tournaments</h2>
-            <h1 class="dollar-amnt">${{row.total_profit}}</h1>
+            <h1 class="dollar-amnt" id="{{row.type | downcase | append: '-profit'}}">${{row.total_profit}}</h1>
             <div class="total-profit">Total Profit</div>
             <div class="stat">
                 <div>
-                    <strong>{{row.num_buy_ins}}</strong>
+                    <strong id="{{row.type | downcase | append: '-num-buy-ins'}}">{{row.num_buy_ins}}</strong>
                     <span># of Buy Ins</span>
                 </div>
                 <div>
-                    <strong>{{row.roi}}%</strong>
+                    <strong id="{{row.type | downcase | append: '-roi'}}">{{row.roi}}%</strong>
                     <span>ROI %</span>
                 </div>
                 <div>
-                    <strong class="dollar-amnt">${{row.ave_buy_in}}</strong>
+                    <strong class="dollar-amnt" id="{{row.type | downcase | append: '-avg-buyin'}}">${{row.ave_buy_in}}</strong>
                     <span>Average Buy In</span>
                 </div>
             </div>

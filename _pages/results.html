@@ -47,7 +47,7 @@ featured_image: /images/from_khari/home.jpg
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script>
-    $(window).on('load', function () {
+        $(window).on('load', function () {
         // Function to initialize the DataTable and create filters
         function initializeDataTable() {
             var table = $('#results-table').DataTable();
@@ -93,7 +93,7 @@ featured_image: /images/from_khari/home.jpg
             createFilterDropdown(1, '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
             createFilterDropdown(2, '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
         }
-        function numberWithCommas(value) {
+function numberWithCommas(value) {
             return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         }
 
@@ -112,3 +112,52 @@ featured_image: /images/from_khari/home.jpg
     });
 </script>
 
+<script>
+    const table = $('#results-table').DataTable();
+    function updateStatistics() {
+        var data = table.rows({ search: 'applied' }).data();
+
+        var onlineProfit = 0, liveProfit = 0;
+        var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
+        var liveCashIn = 0, liveCashOut = 0, liveBullets = 0;
+
+        data.each(function (row) {
+            var type = row[1];
+            var cashIn = parseFloat(row[4].replace(/[^0-9.-]+/g, ""));
+            var cashOut = parseFloat(row[5].replace(/[^0-9.-]+/g, ""));
+            var net = parseFloat(row[6].replace(/[^0-9.-]+/g, ""));
+            var bullets = parseFloat(row[8]);
+
+            if (type === 'Online') {
+                onlineProfit += net;
+                onlineCashIn += cashIn;
+                onlineCashOut += cashOut;
+                onlineBullets += bullets;
+            } else if (type === 'Live') {
+                liveProfit += net;
+                liveCashIn += cashIn;
+                liveCashOut += cashOut;
+                liveBullets += bullets;
+            }
+        });
+
+        var onlineROI = onlineCashIn > 0 ? ((onlineCashOut - onlineCashIn) / onlineCashIn) * 100 : 0;
+        var liveROI = liveCashIn > 0 ? ((liveCashOut - liveCashIn) / liveCashIn) * 100 : 0;
+        var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
+        var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
+
+        $('#online-profit').text('$' + onlineProfit.toFixed(2));
+        $('#online-roi').text(onlineROI.toFixed(2) + '%');
+        $('#online-num-buy-ins').text(onlineBullets);
+        $('#online-avg-buyin').text('$' + onlineAvgBuyIn.toFixed(2));
+
+        $('#live-profit').text('$' + liveProfit.toFixed(2));
+        $('#live-roi').text(liveROI.toFixed(2) + '%');
+        $('#live-num-buy-ins').text(liveBullets);
+        $('#live-avg-buyin').text('$' + liveAvgBuyIn.toFixed(2));
+    }   
+
+    table.on('draw.dt', function () {
+        updateStatistics()
+    });
+</script>
