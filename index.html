@@ -10,8 +10,8 @@ description: A sleek, modern Jekyll theme for personal websites. Personal is the
 
 	<div class="wrap" id="home-middle">
 
-		<h1 class="rly-make">So how much money does a professional poker player <em>really</em> make?</h1>
-		<p>My name is Khari Hutchings, <em>aka the <strong>Poker Panther. </strong></em>In 2023 I quit my consulting job to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player they alwaus ask me the same question - so <strong>how much money do you <em>really</em> make?</strong>
+		<h1 class="rly-make">So how much money does a professional poker player <em style="color: {{ site.data.settings.color_settings.accent_color }};">really</em> make?</h1>
+		<p>My name is Khari Hutchings, <em>aka the <strong>Poker Panther. </strong></em>In 2023 I quit my consulting job to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player they always ask me the same question - so <strong>how much money do you <em>really</em> make?</strong>
 		</p>
 
 		<p><strong>Well, now you can take a look for yourselves.</strong></p>
@@ -27,7 +27,9 @@ description: A sleek, modern Jekyll theme for personal websites. Personal is the
 
 <script>
 	$(document).ready(function() {
-		$('body').attr('id', 'home-pg');
-		$('h1').attr('id','home-pg');
+		$('body').attr('id', 'home-pg'); // allows for background img 
+		$('h1').attr('id','home-pg'); // makes text of h1 light
+		$('a.menu__list__item__link').attr('id','home-pg-header'); // makes menu light
+		$('a.header__title.active-link').attr('id','home-pg-header'); // makes site title light
 	});
 </script>
