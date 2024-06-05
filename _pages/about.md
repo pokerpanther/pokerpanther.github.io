@@ -1,14 +1,14 @@
 ---
 title: About me
 description: Personal is the perfect theme for developers, designers and other creatives.
-featured_image: /images/from_khari/home.jpg
+featured_image: /images/from_khari/happy_landscape.jpg
 ---
 
 <div style="display: flex; align-items: center;">
 
     <div>
         <h2> My name is Khari Hutchings, aka The Poker Panther </h2>
-        <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 300px; margin: 20px 20px 20px 0; float: left; max-width: 50%;">
+        <img src="/images/from_khari/smiley_1.jpg" alt="Image Description" style="width: 300px; margin: 20px 20px 20px 0; float: left; max-width: 50%;">
 
         <p>Hello and welcome! My name is Khari Hutchings, in 2023 I quit my consulting job in New York City and moved to Florida to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player, the first question they ask me is always the same - so how much money do you really make?
         </p>
@@ -35,10 +35,27 @@ featured_image: /images/from_khari/home.jpg
 ---
 #### The Poker Panther
 
-One thing that they teach you very early on in consulting is that you should identify exactly what metrics determine whether or not a venture is successful before you begin. This is something that we as consultants have to do at the beginning of every project. If you don’t know what metrics constitute success, you’re taught to look up “comps” or comparable situations that are similar to yours in order to create a benchmark. 
+<div style="display: flex; align-items: center;">
+    <div>
 
-Opening up a new dental practice and not sure how much revenue you should make in your first year? Well, a search through Benchmark101 shows that dental practices in the last 10 years have made $200k in revenue in their first year on average. We want to be better than that, so we set $250k as our goal. Benchmark completed.
+        <p>One thing that they teach you very early on in consulting is that you should identify exactly what metrics determine whether or not a venture is successful before you begin. This is something that we as consultants have to do at the beginning of every project. If you don’t know what metrics constitute success, you’re taught to look up “comps” or comparable situations that are similar to yours in order to create a benchmark. </p>
 
- When I started my journey as a professional poker player, I know I wanted to make money (duh, right?) but wasn’t sure how much I could reasonable expect to make. How much do poker players make anyway? I know my personal results, and I’ve seen some vloggers post about how much they made or lost in a certain year, but I wanted something more specific to base my results off of. I needed something more concrete.
+        <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 250px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">      
+        <p>Opening up a new dental practice and not sure how much revenue you should make in your first year? Well, a search through Benchmark101 shows that dental practices in the last 10 years have made $200k in revenue in their first year on average. We want to be better than that, so we set $250k as our goal. Benchmark completed.</p>
+        <p>When I started my journey as a professional poker player, I know I wanted to make money (duh, right?) but wasn’t sure how much I could reasonable expect to make. How much do poker players make anyway? I know my personal results, and I’ve seen some vloggers post about how much they made or lost in a certain year, but I wanted something more specific to base my results off of. I needed something more concrete.</p>
+        <p>Looking through this sparse data just left me with so many questions. How many hours are they playing? How many buy ins, or bullets, are they firing in each tournament? What’s their average buy in? Do they make more money from online tournaments or live tournaments? Bigger buy ins or smaller buy ins?</p>
+    </div>
 
-Looking through this sparse data just left me with so many questions. How many hours are they playing? How many buy ins, or bullets, are they firing in each tournament? What’s their average buy in? Do they make more money from online tournaments or live tournaments? Bigger buy ins or smaller buy ins?
+</div>
+
+
+
+
+
+
+   
+
+
+
+
+
