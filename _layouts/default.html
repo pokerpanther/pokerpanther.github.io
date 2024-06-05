@@ -48,7 +48,10 @@
 	<!-- Extra Header JS Code -->
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
-	
+	<!-- Javascript Assets -->
+	{% if page.title != "Results" %} 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	{% endif %}
 </head>
 
 
@@ -78,9 +81,7 @@
 
 
 	<!-- Javascript Assets -->
-	{% if page.title != "Results" %} 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	{% endif %}
+
 	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
 	<script src="{{ '/js/personal-min.js' | relative_url }}"></script>
 
