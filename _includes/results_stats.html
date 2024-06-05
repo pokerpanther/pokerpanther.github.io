@@ -2,7 +2,7 @@
 {% assign total_profit_monthly = site.data.stats | where: "type", "Monthly" %}
 {% assign online_live = site.data.stats | where_exp: "row", "row.type == 'Online' or row.type == 'Live'" %}
 <div class="agg-stats-container">
-    <h1 class="dollar-amnt">${{ total_profit_all[0].total_profit }}</h2>
+    <h1 class="dollar-amnt" id="total-profit">${{ total_profit_all[0].total_profit }}</h2>
     <h1 class="total-profit">Yearly Profit</h2>
 </div>
 

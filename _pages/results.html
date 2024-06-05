@@ -131,6 +131,7 @@ featured_image: /images/from_khari/home.jpg
     function updateStatistics() {
         var data = table.rows({ search: 'applied' }).data();
 
+        var totalProfit = 0;
         var onlineProfit = 0, liveProfit = 0;
         var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
         var liveCashIn = 0, liveCashOut = 0, liveBullets = 0;
@@ -153,12 +154,16 @@ featured_image: /images/from_khari/home.jpg
                 liveCashOut += cashOut;
                 liveBullets += bullets;
             }
+
+            totalProfit += net;
         });
 
         var onlineROI = onlineCashIn > 0 ? ((onlineCashOut - onlineCashIn) / onlineCashIn) * 100 : 0;
         var liveROI = liveCashIn > 0 ? ((liveCashOut - liveCashIn) / liveCashIn) * 100 : 0;
         var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
         var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
+
+        $('#total-profit').text('$' + formatNumber(totalProfit));
 
         $('#online-profit').text('$' + formatNumber(onlineProfit));
         $('#online-roi').text(formatNumber(onlineROI) + '%');
