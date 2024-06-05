@@ -1,0 +1,20 @@
+#home-pg {
+	background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('/images/from_khari/home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	color: $text-light-color;
+}
+
+h1.rly-make {
+    padding-top: 100px;
+}
+
+#home-middle {
+    text-align: center;
+}
+
+#home-pg-header {
+    color:$text-light-color;
+}
