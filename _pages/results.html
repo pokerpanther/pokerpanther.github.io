@@ -30,7 +30,7 @@ featured_image: /images/from_khari/home.jpg
     <tbody>
         {% for tournament in site.data.results %}
         <tr>
-            <td class="dt-body-right">{{ tournament.date }}</td>
+            <td class="dt-body-right" date="{{tournament.sortable-date}}">{{ tournament.date }}</td>
             <td class="dt-body-left">{{ tournament.type }}</td>
             <td class="dt-body-left">{{ tournament.location }}</td>
             <td class="dt-body-left">{{ tournament.level_guarantee }}</td>

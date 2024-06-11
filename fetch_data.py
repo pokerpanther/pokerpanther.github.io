@@ -50,8 +50,8 @@ def calc_stats(df, type):
     return stats
 
 def set_data_types(df):
-    df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
-
+    df['sortable-date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
+    df['date'] = pd.to_datetime(df['date']).dt.strftime('%B %d, %Y')
     # convert numerical cols to number types
     for col in ['net', 'cash_in', 'cash_out']: 
         df[col] = df[col].str.replace('[$,]', '', regex=True).astype(float)
