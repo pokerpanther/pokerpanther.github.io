@@ -49,6 +49,15 @@ def calc_stats(df, type):
 
     return stats
 
+def set_data_types(df):
+    df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
+
+    # convert numerical cols to number types
+    for col in ['net', 'cash_in', 'cash_out']: 
+        df[col] = df[col].str.replace('[$,]', '', regex=True).astype(float)
+    for col in ['bullets', 'duration_min']:
+        df[col] = df[col].astype(int)
+
 gc = gspread.service_account(filename=local_creds_path)
 wkbk = gc.open_by_url(results_wkbk_url)
 sheet = wkbk.get_worksheet(results_sheet_num) 
@@ -56,23 +65,8 @@ data = sheet.get_all_values() # data is a list of lists
 orig_col_names = data[0] # first list is col names
 col_names = [to_snake_case(s) for s in orig_col_names]
 data_dicts = [dict(zip(col_names, row)) for row in data[1:]]
-
-with open('./_data/results.yml', 'w') as file:
-    yaml.dump(data_dicts, file, sort_keys=False)
-
-with open('./_data/col_name_map.csv', 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(['var_name', 'display_name'])
-    for var_name, display_name in zip(col_names, orig_col_names):
-        writer.writerow([var_name, display_name])
-
 all_results = pd.DataFrame(data_dicts)
-
-# convert numerical cols to number types
-for col in ['net', 'cash_in', 'cash_out']: 
-    all_results[col] = all_results[col].str.replace('[$,]', '', regex=True).astype(float)
-for col in ['bullets', 'duration_min']:
-    all_results[col] = all_results[col].astype(int)
+set_data_types(all_results)
 
 online_results = all_results[all_results["type"].str.strip().str.lower() == "online"].copy()
 live_results = all_results[all_results["type"].str.strip().str.lower() == "live"].copy()
@@ -80,6 +74,17 @@ live_results = all_results[all_results["type"].str.strip().str.lower() == "live"
 online_stats = calc_stats(online_results, "Online")
 live_stats = calc_stats(live_results, "Live")
 overall_stats = calc_stats(all_results, "All")
+
+
+with open('./_data/results.yml', 'w') as file:
+    yaml.dump(all_results.to_dict(orient='records'), file, sort_keys=False)
+
+with open('./_data/col_name_map.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['var_name', 'display_name'])
+    for var_name, display_name in zip(col_names, orig_col_names):
+        writer.writerow([var_name, display_name])
+
 
 with open('./_data/stats.csv', 'w') as file:
     writer = csv.writer(file)
