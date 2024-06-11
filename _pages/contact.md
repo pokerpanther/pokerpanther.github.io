@@ -2,7 +2,7 @@
 title: Contact
 subtitle: I would love to hear from you! Have any questions or comments? Something featured on the website you don’t understand? Feedback for things I can include in the future? Looking for advice on starting your own journey with poker? Let me know! Please fill out the form and our team will get back to you as soon as possible, thanks! 
 
-description: Personal is the perfect theme for developers, designers and other creatives.
+description: Have any questions or comments? I would love to hear from you!
 featured_image: /images/from_khari/home.jpg
 ---
 
