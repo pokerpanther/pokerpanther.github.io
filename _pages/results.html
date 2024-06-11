@@ -65,7 +65,8 @@ featured_image: /images/from_khari/home.jpg
     }
 
     var columnIndices = getColumnIndices(table);
-
+    table.order([columnIndices['Date'], 'desc']).draw();
+    
     $(window).on('load', function () {
         // Function to initialize the DataTable and create filters
         function initializeDataTable() {
