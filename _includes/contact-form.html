@@ -26,5 +26,37 @@
 		</div>
 
 	</form>
-
+	<script>
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault(); // Prevent the default form submission
+		
+			const form = event.target;
+			const data = new FormData(form);
+			const action = form.action;
+		
+			fetch(action, {
+				method: 'POST',
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					form.reset(); // Clear the form inputs
+					window.location.href = '/thanks'; // Redirect to the /thanks page
+				} else {
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							alert(data["errors"].map(error => error["message"]).join(", "));
+						} else {
+							alert('Oops! There was a problem submitting your form');
+						}
+					})
+				}
+			}).catch(error => {
+				alert('Oops! There was a problem submitting your form');
+			});
+		});
+	</script>
+		
 </div>
