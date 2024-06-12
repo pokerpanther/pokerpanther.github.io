@@ -47,94 +47,104 @@ featured_image: /images/from_khari/home.jpg
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script>
-    function formatNumber(value) {
-        var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
-        return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(numberValue);
-    }
-    function getColumnIndices() {
-        var headers = {};
-        $('#results-table thead th').each(function(index) {
-            headers[$(this).text()] = index;
-        });
-        return headers;
-    }
 
-    var colIndex = getColumnIndices();
-    
     $(window).on('load', function () {
-        // Function to initialize the DataTable and create filters
-        var table = $('#results-table').DataTable(
-            {   
-                columnDefs: [
-                    {
-                        targets: [colIndex["Cash In"], 
-                                  colIndex["Cash Out"], 
-                                  colIndex["Net"]
-                                ],
-                        render: function (data, type, row){
-                            return "$" + formatNumber(data);
-                        }
 
+        function formatNumber(value, isDollar = false) { // returns type String
+            var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
+            var options = { minimumFractionDigits: 2, maximumFractionDigits: 2 }
 
-                    }
-                ],
-                pageLength: 25,
-                order: [[colIndex["Date"], "desc"]],
-            }
-        );
-        function initializeDataTable() {
-            // Function to create filter dropdowns
-            function createFilterDropdown(columnIndex, buttonId, dropdownId) {
-                var columnData = table.column(columnIndex).data().toArray();
-                var uniqueValues = [...new Set(columnData)].sort();
-                var dropdown = $(dropdownId);
-                uniqueValues.forEach(function (value) {
-                    dropdown.append('<label><input type="checkbox" value="' + value + '"> ' + value + '</label>');
-                });
-
-                $(buttonId).on('click', function (e) {
-                    dropdown.toggle();
-                    dropdown.css({
-                        top: $(this).position().top + $(this).outerHeight(),
-                        left: $(this).position().left
-                    });
-                    e.stopPropagation();
-                });
-
-                dropdown.on('click', function (e) {
-                    e.stopPropagation();
-                });
-
-                $(document).on('click', function () {
-                    dropdown.hide();
-                });
-
-                dropdown.find('input').on('change', function () {
-                    var selectedValues = dropdown.find('input:checked').map(function () {
-                        return this.value;
-                    }).get();
-
-                    if (selectedValues.length > 0) {
-                        table.column(columnIndex).search(selectedValues.join('|'), true, false).draw();
-                    } else {
-                        table.column(columnIndex).search('').draw();
-                    }
-                    // Toggle the selected-filter class based on checkbox state
-                    $(this).parent().toggleClass('bold-text', this.checked);                    
-                });
-            }
-
-            createFilterDropdown(colIndex['Type'], '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
-            createFilterDropdown(colIndex['Location'], '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
+            if (isDollar) {
+                options = {
+                    ...options,
+                    style: "currency",
+                    currency: "USD"
+                }
+            } 
+            return new Intl.NumberFormat('en-US', options).format(numberValue);
         }
-        function updateDollarValues() {
+
+        function getColumnIndices() { // returns dict of table's {colName : colIndex} 
+            var headers = {};
+            $('#results-table thead th').each(function(index) {
+                headers[$(this).text()] = index;
+            });
+            return headers;
+        }
+
+        // Function to initialize the DataTable and create filters
+        function buildDataTable() {
+            return $('#results-table').DataTable(
+                {   
+                    columnDefs: [
+                        {
+                            targets: [colIndex["Cash In"], 
+                                    colIndex["Cash Out"], 
+                                    colIndex["Net"]
+                                    ],
+                            render: function (data, type, row){
+                                return formatNumber(data, true);
+                            }
+                        }
+                    ],
+                    pageLength: 25,
+                    order: [[colIndex["Date"], "desc"]],
+                }
+            );
+        }
+
+        // Function to create filter dropdowns; requires that DataTable table ref exists
+        function createFilterDropdown(columnIndex, buttonId, dropdownId) {
+            var columnData = table.column(columnIndex).data().toArray();
+            var uniqueValues = [...new Set(columnData)].sort();
+            var dropdown = $(dropdownId);
+            uniqueValues.forEach(function (value) {
+                dropdown.append('<label><input type="checkbox" value="' + value + '"> ' + value + '</label>');
+            });
+
+            $(buttonId).on('click', function (e) {
+                dropdown.toggle();
+                dropdown.css({
+                    top: $(this).position().top + $(this).outerHeight(),
+                    left: $(this).position().left
+                });
+                e.stopPropagation();
+            });
+
+            dropdown.on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on('click', function () {
+                dropdown.hide();
+            });
+
+            dropdown.find('input').on('change', function () {
+                var selectedValues = dropdown.find('input:checked').map(function () {
+                    return this.value;
+                }).get();
+
+                if (selectedValues.length > 0) {
+                    table.column(columnIndex).search(selectedValues.join('|'), true, false).draw();
+                } else {
+                    table.column(columnIndex).search('').draw();
+                }
+                // Toggle the selected-filter class based on checkbox state
+                $(this).parent().toggleClass('bold-text', this.checked);                    
+            });
+        }
+        
+        // Calls formatNumber(isDollar = true) on all elements with class="dollar-amnt", which are all in results-stats.html
+        function formatAllDollarAmnts() {
             const myNumber = document.querySelectorAll('.dollar-amnt');
             myNumber.forEach((e) => {
                 const numericValue = e.textContent;
-                const formattedValue = formatNumber(numericValue);
-                e.textContent = "$" + formattedValue;
+                const formattedValue = formatNumber(numericValue, true);
+                e.textContent = formattedValue;
             });
         }
+
+        // fetches table's filtered data rows and calculates stats based on applied filters
         function updateStatistics() {
             var data = table.rows({ search: 'applied' }).data();
 
@@ -170,25 +180,30 @@ featured_image: /images/from_khari/home.jpg
             var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
             var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
 
-            $('#total-profit').text('$' + formatNumber(totalProfit));
+            $('#total-profit').text(formatNumber(totalProfit, true));
 
-            $('#online-profit').text('$' + formatNumber(onlineProfit));
+            $('#online-profit').text(formatNumber(onlineProfit, true));
             $('#online-roi').text(formatNumber(onlineROI) + '%');
             $('#online-num-buy-ins').text(onlineBullets);
-            $('#online-avg-buyin').text('$' + formatNumber(onlineAvgBuyIn));
+            $('#online-avg-buyin').text(formatNumber(onlineAvgBuyIn, true));
 
-            $('#live-profit').text('$' + formatNumber(liveProfit));
+            $('#live-profit').text(formatNumber(liveProfit, true));
             $('#live-roi').text(formatNumber(liveROI) + '%');
             $('#live-num-buy-ins').text(parseInt(liveBullets));
-            $('#live-avg-buyin').text('$' + formatNumber(liveAvgBuyIn));
+            $('#live-avg-buyin').text(formatNumber(liveAvgBuyIn, true));
         }   
 
-        table.on('draw.dt', function () {
-            updateStatistics()
+        formatAllDollarAmnts(); // add dollar formatting to agg stats
+
+        let colIndex = getColumnIndices(); // init dict of colName : colIndex
+        let table = buildDataTable(); // DataTable object constructor call
+
+        createFilterDropdown(colIndex['Type'], '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
+        createFilterDropdown(colIndex['Location'], '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
+
+        table.on('draw.dt', function () { // table's draw event handler
+            updateStatistics();
         });
-        // Initialize DataTable and filters
-        initializeDataTable();
-        updateDollarValues();
     });
 
 

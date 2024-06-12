@@ -2,7 +2,7 @@
 {% assign total_profit_monthly = site.data.stats | where: "type", "Monthly" %}
 {% assign online_live = site.data.stats | where_exp: "row", "row.type == 'Online' or row.type == 'Live'" %}
 <div class="agg-stats-container">
-    <h1 class="dollar-amnt" id="total-profit">${{ total_profit_all[0].total_profit }}</h2>
+    <h1 class="dollar-amnt" id="total-profit">{{ total_profit_all[0].total_profit }}</h2>
     <h1 class="total-profit">Yearly Profit</h2>
 </div>
 
@@ -10,7 +10,7 @@
     {% for row in online_live %}
         <div class="container">
             <h2>{{row.type}} Tournaments</h2>
-            <h1 class="dollar-amnt" id="{{row.type | downcase | append: '-profit'}}">${{row.total_profit}}</h1>
+            <h1 class="dollar-amnt" id="{{row.type | downcase | append: '-profit'}}">{{row.total_profit}}</h1>
             <div class="total-profit">Total Profit</div>
             <div class="stat">
                 <div>
@@ -22,7 +22,7 @@
                     <span>ROI %</span>
                 </div>
                 <div>
-                    <strong class="dollar-amnt" id="{{row.type | downcase | append: '-avg-buyin'}}">${{row.ave_buy_in}}</strong>
+                    <strong class="dollar-amnt" id="{{row.type | downcase | append: '-avg-buyin'}}">{{row.ave_buy_in}}</strong>
                     <span>Average Buy In</span>
                 </div>
             </div>
