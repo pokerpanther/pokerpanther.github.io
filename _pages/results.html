@@ -146,8 +146,8 @@ featured_image: /images/from_khari/home.jpg
             data.each(function (row) {
                 var type = row[colIndex['Type']];
                 var cashIn = parseFloat(row[colIndex['Cash In']]);
-                var cashOut = parseFloat(row[colIndex['Cash In']]);
-                var net = parseFloat(row[colIndex['Cash In']]);
+                var cashOut = parseFloat(row[colIndex['Cash Out']]);
+                var net = parseFloat(row[colIndex['Net']]);
                 var bullets = parseFloat(row[colIndex['Bullets']]);        
 
                 if (type === 'Online') {
