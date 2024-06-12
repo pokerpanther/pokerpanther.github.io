@@ -186,3 +186,6 @@ table {
     font-size: 0.7em;  
     margin-left: 4px;  
 }
+.nowrap { // ensures Date col does not wrap onto 2nd line
+    white-space: nowrap;
+}
