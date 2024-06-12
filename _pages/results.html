@@ -30,7 +30,7 @@ featured_image: /images/from_khari/home.jpg
     <tbody>
         {% for tournament in site.data.results %}
         <tr>
-            <td class="dt-body-right" date="{{tournament.sortable-date}}">{{ tournament.date }}</td>
+            <td class="dt-body-right" data-order="{{tournament.sortable-date}}">{{ tournament.date }}</td>
             <td class="dt-body-left">{{ tournament.type }}</td>
             <td class="dt-body-left">{{ tournament.location }}</td>
             <td class="dt-body-left">{{ tournament.level_guarantee }}</td>
@@ -47,28 +47,42 @@ featured_image: /images/from_khari/home.jpg
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script>
-    var table = $('#results-table').DataTable({"pageLength": 25});
     function formatNumber(value) {
         var numberValue = parseFloat(value.toString().replace(/[^0-9.-]+/g, ""));
         return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(numberValue);
     }
-    function getColumnIndices(table) {
-        var headers = table.columns().header().toArray();
-        var indices = {};
-        
-        headers.forEach((header, index) => {
-            var headerText = $(header).text().trim();
-            indices[headerText] = index;
+    function getColumnIndices() {
+        var headers = {};
+        $('#results-table thead th').each(function(index) {
+            headers[$(this).text()] = index;
         });
-        
-        return indices;
+        return headers;
     }
 
-    var columnIndices = getColumnIndices(table);
-    table.order([columnIndices['Date'], 'desc']).draw();
+    var colIndex = getColumnIndices();
     
     $(window).on('load', function () {
         // Function to initialize the DataTable and create filters
+        var table = $('#results-table').DataTable(
+            {   
+                columnDefs: [
+                    {
+                        targets: [colIndex["Cash In"], 
+                                  colIndex["Cash Out"], 
+                                  colIndex["Net"]
+                                ],
+                        render: function (data, type, row){
+                            return "$" + formatNumber(data);
+                        }
+
+
+                    }
+                ],
+                pageLength: 25,
+                
+
+            }
+        );
         function initializeDataTable() {
             // Function to create filter dropdowns
             function createFilterDropdown(columnIndex, buttonId, dropdownId) {
@@ -111,8 +125,8 @@ featured_image: /images/from_khari/home.jpg
                 });
             }
 
-            createFilterDropdown(columnIndices['Type'], '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
-            createFilterDropdown(columnIndices['Location'], '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
+            createFilterDropdown(colIndex['Type'], '#filter-type-btn', '#filter-type-dropdown'); // Filter for Type column
+            createFilterDropdown(colIndex['Location'], '#filter-location-btn', '#filter-location-dropdown'); // Filter for Location column
         }
         function updateDollarValues() {
             const myNumber = document.querySelectorAll('.dollar-amnt');
@@ -122,62 +136,62 @@ featured_image: /images/from_khari/home.jpg
                 e.textContent = "$" + formattedValue;
             });
         }
+        function updateStatistics() {
+            var data = table.rows({ search: 'applied' }).data();
 
+            var totalProfit = 0;
+            var onlineProfit = 0, liveProfit = 0;
+            var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
+            var liveCashIn = 0, liveCashOut = 0, liveBullets = 0;
+
+            data.each(function (row) {
+                var type = row[colIndex['Type']];
+                var cashIn = parseFloat(row[colIndex['Cash In']]);
+                var cashOut = parseFloat(row[colIndex['Cash In']]);
+                var net = parseFloat(row[colIndex['Cash In']]);
+                var bullets = parseFloat(row[colIndex['Bullets']]);        
+
+                if (type === 'Online') {
+                    onlineProfit += net;
+                    onlineCashIn += cashIn;
+                    onlineCashOut += cashOut;
+                    onlineBullets += bullets;
+                } else if (type === 'Live') {
+                    liveProfit += net;
+                    liveCashIn += cashIn;
+                    liveCashOut += cashOut;
+                    liveBullets += bullets;
+                }
+
+                totalProfit += net;
+            });
+
+            var onlineROI = onlineCashIn > 0 ? ((onlineCashOut - onlineCashIn) / onlineCashIn) * 100 : 0;
+            var liveROI = liveCashIn > 0 ? ((liveCashOut - liveCashIn) / liveCashIn) * 100 : 0;
+            var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
+            var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
+
+            $('#total-profit').text('$' + formatNumber(totalProfit));
+
+            $('#online-profit').text('$' + formatNumber(onlineProfit));
+            $('#online-roi').text(formatNumber(onlineROI) + '%');
+            $('#online-num-buy-ins').text(onlineBullets);
+            $('#online-avg-buyin').text('$' + formatNumber(onlineAvgBuyIn));
+
+            $('#live-profit').text('$' + formatNumber(liveProfit));
+            $('#live-roi').text(formatNumber(liveROI) + '%');
+            $('#live-num-buy-ins').text(parseInt(liveBullets));
+            $('#live-avg-buyin').text('$' + formatNumber(liveAvgBuyIn));
+        }   
+
+        table.on('draw.dt', function () {
+            updateStatistics()
+        });
         // Initialize DataTable and filters
         initializeDataTable();
         updateDollarValues();
     });
 
 
-    function updateStatistics() {
-        var data = table.rows({ search: 'applied' }).data();
 
-        var totalProfit = 0;
-        var onlineProfit = 0, liveProfit = 0;
-        var onlineCashIn = 0, onlineCashOut = 0, onlineBullets = 0;
-        var liveCashIn = 0, liveCashOut = 0, liveBullets = 0;
-
-        data.each(function (row) {
-            var type = row[columnIndices['Type']];
-            var cashIn = parseFloat(row[columnIndices['Cash In']].replace(/[^0-9.-]+/g, ""));
-            var cashOut = parseFloat(row[columnIndices['Cash Out']].replace(/[^0-9.-]+/g, ""));
-            var net = parseFloat(row[columnIndices['Net']].replace(/[^0-9.-]+/g, ""));
-            var bullets = parseFloat(row[columnIndices['Bullets']]);        
-
-            if (type === 'Online') {
-                onlineProfit += net;
-                onlineCashIn += cashIn;
-                onlineCashOut += cashOut;
-                onlineBullets += bullets;
-            } else if (type === 'Live') {
-                liveProfit += net;
-                liveCashIn += cashIn;
-                liveCashOut += cashOut;
-                liveBullets += bullets;
-            }
-
-            totalProfit += net;
-        });
-
-        var onlineROI = onlineCashIn > 0 ? ((onlineCashOut - onlineCashIn) / onlineCashIn) * 100 : 0;
-        var liveROI = liveCashIn > 0 ? ((liveCashOut - liveCashIn) / liveCashIn) * 100 : 0;
-        var onlineAvgBuyIn = onlineBullets > 0 ? onlineCashIn / onlineBullets : 0;
-        var liveAvgBuyIn = liveBullets > 0 ? liveCashIn / liveBullets : 0;
-
-        $('#total-profit').text('$' + formatNumber(totalProfit));
-
-        $('#online-profit').text('$' + formatNumber(onlineProfit));
-        $('#online-roi').text(formatNumber(onlineROI) + '%');
-        $('#online-num-buy-ins').text(onlineBullets);
-        $('#online-avg-buyin').text('$' + formatNumber(onlineAvgBuyIn));
-
-        $('#live-profit').text('$' + formatNumber(liveProfit));
-        $('#live-roi').text(formatNumber(liveROI) + '%');
-        $('#live-num-buy-ins').text(liveBullets);
-        $('#live-avg-buyin').text('$' + formatNumber(liveAvgBuyIn));
-    }   
-
-    table.on('draw.dt', function () {
-        updateStatistics()
-    });
 </script>
