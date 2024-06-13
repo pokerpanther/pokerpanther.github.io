@@ -30,14 +30,14 @@ featured_image: /images/from_khari/home.jpg
     <tbody>
         {% for tournament in site.data.results %}
         <tr>
-            <td class="dt-body-right" data-order="{{tournament.sortable-date}}">{{ tournament.date }}</td>
+            <td class="dt-body-right" data-order="{{tournament.date.sortable}}">{{ tournament.date.display }}</td>
             <td class="dt-body-left">{{ tournament.type }}</td>
             <td class="dt-body-left">{{ tournament.location }}</td>
             <td class="dt-body-left">{{ tournament.level_guarantee }}</td>
             <td class="dt-body-right">{{ tournament.cash_in }}</td>
             <td class="dt-body-right">{{ tournament.cash_out }}</td>
             <td class="dt-body-right">{{ tournament.net }}</td>
-            <td class="dt-body-right">{{ tournament.place }}</td>
+            <td class="dt-body-right" data-order="{{tournament.place.sortable}}">{{ tournament.place.display }}</td>
             <td class="dt-body-center">{{ tournament.bullets }}</td>
         </tr>
         {% endfor %}
