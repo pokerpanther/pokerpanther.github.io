@@ -1,6 +1,5 @@
 ---
 title: About me
-description: Personal is the perfect theme for developers, designers and other creatives.
 featured_image: /images/from_khari/happy_landscape.jpg
 ---
 
@@ -12,7 +11,7 @@ featured_image: /images/from_khari/happy_landscape.jpg
 
         <p>Hello and welcome! My name is Khari Hutchings, in 2023 I quit my consulting job in New York City and moved to Florida to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player, the first question they ask me is always the same - so how much money do you really make?
         </p>
-        <p>I wanted to create this website to show exactly that, the finances behind a professional poker player. On this website I’ll track my poker tournament results in REAL time on my journey to earn $100,000 from poker tournaments in 2024. I want to offer those who are following my progress the never-before-seen behind the scenes information of what the finances of a poker tournament grinder look like.</p>
+        <p>I wanted to create this website to show exactly that, the finances behind a professional poker player. On this website I’ll track my poker tournament results in REAL time to offer those who are following my progress the never-before-seen behind the scenes information of what the finances of a poker tournament grinder look like.</p>
     </div>
 </div>
 
@@ -23,11 +22,10 @@ featured_image: /images/from_khari/happy_landscape.jpg
 <div style="display: flex; align-items: center;">
     <div>
 
-        <p>I first started playing poker on Facebook poker in high school for play money - though I must say, I was crushing it. I’ve been a fan of card games my entire life, and even used to play in Yu-Gi-Oh and Magic the Gathering tournaments in high school. My friends and I would play poker for fun in high school and college, but I didn’t start taking it more seriously until I graduated college.</p>
+        <p>I first started playing poker on Facebook and with my friends in high school, but I didn’t start taking it more seriously until I graduated college. I had 6 months between college graduation and my first day on the job and this was when I first fell in love with the game. I spent the majority of these 6 months studying and reading every piece of material I could get my hands on.</p>
 
         <img src="/images/from_khari/serious_landscape.jpg" alt="Image Description" style="width: 400px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">        
-        <p>I had 6 months between college graduation and my first day as a consultant and devoted a lot of this time to studying and playing poker. Once I started work, I would play on evenings and on weekends where I could. Eventually I was making more and more money from poker, and figured I owed it to myself to take a shot at playing fulltime. If I failed, at least I would have a cool story out of it, right?</p>
-        <p>I took a 6 month sabbatical from my job and spent most of it playing as many poker tournaments (with a bit of cash) as I possibly could. While it was a bit bumpy at the beginning to say the least, I was eventually able to get a bit of momentum going and decided to take the plunge into full time poker once the 6 month sabbatical was over.</p>
+        <p>By the time my job was scheduled to start, I’m proud to admit I was still absolutely <em>awful</em>, but I continued to play on evenings and on weekends where I could and eventually things began to improve. At a certain point I was enough money from poker, that I owed it to myself to take a shot at playing fulltime. If I failed, at least I would have a cool story out of it, right?</p>
     </div>
 
 </div>
@@ -38,12 +36,15 @@ featured_image: /images/from_khari/happy_landscape.jpg
 <div style="display: flex; align-items: center;">
     <div>
 
-        <p>One thing that they teach you very early on in consulting is that you should identify exactly what metrics determine whether or not a venture is successful before you begin. This is something that we as consultants have to do at the beginning of every project. If you don’t know what metrics constitute success, you’re taught to look up “comps” or comparable situations that are similar to yours in order to create a benchmark. </p>
+        <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 250px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">    
 
-        <img src="/images/from_khari/smiley_portrait.jpg" alt="Image Description" style="width: 250px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">      
-        <p>Opening up a new dental practice and not sure how much revenue you should make in your first year? Well, a search through Benchmark101 shows that dental practices in the last 10 years have made $200k in revenue in their first year on average. We want to be better than that, so we set $250k as our goal. Benchmark completed.</p>
-        <p>When I started my journey as a professional poker player, I know I wanted to make money (duh, right?) but wasn’t sure how much I could reasonable expect to make. How much do poker players make anyway? I know my personal results, and I’ve seen some vloggers post about how much they made or lost in a certain year, but I wanted something more specific to base my results off of. I needed something more concrete.</p>
-        <p>Looking through this sparse data just left me with so many questions. How many hours are they playing? How many buy ins, or bullets, are they firing in each tournament? What’s their average buy in? Do they make more money from online tournaments or live tournaments? Bigger buy ins or smaller buy ins?</p>
+<p>
+    
+    When I started my journey as a professional poker player, I knew I wanted to make money (duh) but wasn’t sure how much I could reasonably expect to make. They don’t exactly give you a starting salary when you begin like they do in most jobs. I knew my personal results, and I’ve seen some vloggers post about how much they made or lost in a certain year, but I wanted something more specific to base my results off of and was frustrated that I couldn’t find it.
+</p>
+
+  
+        <p>That’s why I wanted to create this website, to provide complete transparency to what the finances look like behind playing poker professionally. Hopefully this can help current and aspiring poker professionals get an idea of what it looks like behind the scenes to help them grow in their careers.</p>
     </div>
 
 </div>
