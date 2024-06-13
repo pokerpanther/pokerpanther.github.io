@@ -25,7 +25,7 @@ featured_image: /images/from_khari/happy_landscape.jpg
         <p>I first started playing poker on Facebook and with my friends in high school, but I didn’t start taking it more seriously until I graduated college. I had 6 months between college graduation and my first day on the job and this was when I first fell in love with the game. I spent the majority of these 6 months studying and reading every piece of material I could get my hands on.</p>
 
         <img src="/images/from_khari/serious_landscape.jpg" alt="Image Description" style="width: 400px; margin: 20px 0 20px 20px; float: right; max-width: 50%;">        
-        <p>By the time my job was scheduled to start, I’m proud to admit I was still absolutely <em>awful</em>, but I continued to play on evenings and on weekends where I could and eventually things began to improve. At a certain point I was enough money from poker, that I owed it to myself to take a shot at playing fulltime. If I failed, at least I would have a cool story out of it, right?</p>
+        <p>By the time my job was scheduled to start, I’m proud to admit I was still absolutely <em>awful</em>, but I continued to play on evenings and on weekends where I could and eventually things began to improve. At a certain point I had enough money from poker, that I owed it to myself to take a shot at playing fulltime. If I failed, at least I would have a cool story out of it, right?</p>
     </div>
 
 </div>
