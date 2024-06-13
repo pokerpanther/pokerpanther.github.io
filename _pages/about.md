@@ -7,7 +7,7 @@ featured_image: /images/from_khari/happy_landscape.jpg
 <div style="display: flex; align-items: center;">
 
     <div>
-        <h2> My name is Khari Hutchings, aka The Poker Panther </h2>
+        <h2> My name is Khari Hutchings, aka Clutch Poker </h2>
         <img src="/images/from_khari/smiley_1.jpg" alt="Image Description" style="width: 300px; margin: 20px 20px 20px 0; float: left; max-width: 50%;">
 
         <p>Hello and welcome! My name is Khari Hutchings, in 2023 I quit my consulting job in New York City and moved to Florida to pursue my dream of playing poker full time. Every time I tell someone I’m a professional poker player, the first question they ask me is always the same - so how much money do you really make?
@@ -33,7 +33,7 @@ featured_image: /images/from_khari/happy_landscape.jpg
 </div>
 
 ---
-#### The Poker Panther
+#### Clutch Poker
 
 <div style="display: flex; align-items: center;">
     <div>
