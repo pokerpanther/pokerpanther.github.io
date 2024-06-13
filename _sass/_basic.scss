@@ -136,11 +136,11 @@ p {
 	letter-spacing: $p-spacing;
 
 	@include mq(tabletp) {
-		font-size: $p-medium;
+		font-size: $p-small;
 	}
 
 	@include mq(laptop) {
-		font-size: $p-large;
+		font-size: $p-medium;
 	}
 
 	strong {
