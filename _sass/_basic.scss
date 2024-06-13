@@ -128,7 +128,7 @@ h6, .h6 {
 	}
 }
 
-p, ul, ol {
+p {
 	margin-top: 15px;
 	font-size: $p-small;
 	font-weight: $p-weight;
@@ -153,7 +153,9 @@ p, ul, ol {
 }
 
 ul, ol {
+	margin-top: 15px;
 	list-style-position: inside;
+	line-height: 1.6;
 }
 
 blockquote {
