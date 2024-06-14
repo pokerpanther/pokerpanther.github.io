@@ -88,8 +88,8 @@ font_settings:
     letter_spacing: -0.02
   menu:
     small_size: 20
-    medium_size: 22
-    large_size: 25
+    medium_size: 20
+    large_size: 20
     weight: 600
     letter_spacing: 0
   h1:
