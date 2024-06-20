@@ -82,11 +82,8 @@ def convert_place(place_str):
 creds_dict = {}
 
 if os.getenv("GOOGLE_CREDS"): # running from GitHub
-    print("Entered if var GOOGLE_CREDS exists")
     creds_str = os.getenv("GOOGLE_CREDS")
-    print("Wrote creds_str variable as", creds_str)
     creds_dict = json.loads(creds_str)
-    print("Converted creds_str to dict with json.loads, creds_dict:", creds_dict)
 else: # running locally/manually
     creds_dict = json.load(open(local_creds_path))
 
