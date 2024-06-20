@@ -108,8 +108,10 @@ overall_stats = calc_stats(all_results, "All")
 
 
 with open('_data/results.yml', 'w') as file:
+    print("inside open results")
     yaml.dump(all_results.to_dict(orient='records'), file, sort_keys=False)
-
+    print("after yaml dump call")
+    
 with open('_data/col_name_map.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['var_name', 'display_name'])
