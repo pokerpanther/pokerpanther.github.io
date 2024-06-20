@@ -22,27 +22,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Make sure you have a requirements.txt file with your dependencies
-    - name: check for changes
-      run: git status
     - name: Run update script
       env: 
         GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDS }}
       run: python fetch_data.py  # Replace with the path to your Python script
     - name: check for changes
       run: git status
-    - name: add results
-      run: git add _data/results.yml
+    - name: add modified data
+      run: git add *
     - name: check for changes
       run: git status
-    - name: add rest
-      run: git add _data/*
-    - name: Commit and push changes
-      run: |
-        if git diff --quiet; then
-          echo "No changes to commit."
-        else
-          git commit -m 'Update results data'
-          git push
-        fi
+    - name: Shell script
+      run: ./git-updated.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
