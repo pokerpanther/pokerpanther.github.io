@@ -107,17 +107,17 @@ live_stats = calc_stats(live_results, "Live")
 overall_stats = calc_stats(all_results, "All")
 
 
-with open('./_data/results.yml', 'w') as file:
+with open('_data/results.yml', 'w') as file:
     yaml.dump(all_results.to_dict(orient='records'), file, sort_keys=False)
 
-with open('./_data/col_name_map.csv', 'w', newline='') as file:
+with open('_data/col_name_map.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['var_name', 'display_name'])
     for var_name, display_name in zip(col_names, orig_col_names):
         writer.writerow([var_name, display_name])
 
 
-with open('./_data/stats.csv', 'w') as file:
+with open('_data/stats.csv', 'w') as file:
     writer = csv.writer(file)
     writer.writerow(list(online_stats.keys()))
     for stats in [online_stats, live_stats, overall_stats]:
