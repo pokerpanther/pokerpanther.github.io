@@ -15988,18 +15988,3 @@
     display: 90th
     sortable: 90
   bullets: 1
-- date:
-    display: 6/11/24
-    sortable: '2024-06-11'
-  type: A
-  location: B
-  game_type: C
-  level_guarantee: D
-  duration_min: 90
-  cash_in: 33.0
-  cash_out: 3.0
-  net: -30.0
-  place:
-    display: 5th
-    sortable: 5
-  bullets: 1
