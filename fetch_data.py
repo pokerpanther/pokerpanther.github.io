@@ -4,6 +4,9 @@ import re
 import csv
 import pandas as pd
 from datetime import datetime
+import os
+import json 
+
 
 results_wkbk_url = "https://docs.google.com/spreadsheets/d/17Wa4KKc8OK_vU8T4SrZxivgjhVL9_PmW30AxQiZH5jM/edit#gid=0"
 results_sheet_num = 0 # first sheet
@@ -76,7 +79,18 @@ def convert_place(place_str):
         place_str = str(num) + suffix         
     return {'display': place_str, 'sortable': num}
 
-gc = gspread.service_account(filename=local_creds_path)
+creds_dict = {}
+
+if os.getenv("GOOGLE_CREDS"): # running from GitHub
+    print("Entered if var GOOGLE_CREDS exists")
+    creds_str = os.getenv("GOOGLE_CREDS")
+    print("Wrote creds_str variable as", creds_str)
+    creds_dict = json.loads(creds_str)
+    print("Converted creds_str to dict with json.loads, creds_dict:", creds_dict)
+else: # running locally/manually
+    creds_dict = json.load(open(local_creds_path))
+
+gc = gspread.service_account_from_dict(creds_dict)
 wkbk = gc.open_by_url(results_wkbk_url)
 sheet = wkbk.get_worksheet(results_sheet_num) 
 data = sheet.get_all_values() # data is a list of lists
