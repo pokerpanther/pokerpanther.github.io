@@ -9,7 +9,7 @@ exit_code=$?
 
 if [[ $exit_code -ne 0 ]]; then 
     git commit -m 'Update results data'
-    git push
+    git push https://x-access-token:${GITHUB_TOKEN}@github.com/pokerpanther/pokerpanther.github.io.git
 else
     echo "No changes to commit."
 fi
