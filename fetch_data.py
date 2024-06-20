@@ -106,14 +106,11 @@ online_stats = calc_stats(online_results, "Online")
 live_stats = calc_stats(live_results, "Live")
 overall_stats = calc_stats(all_results, "All")
 
-# print("WORKING DIR IS", os.getcwd())
-# print("WORKING DIR CONTENTS", os.listdir(os.getcwd()))
-# print("PARENT DIR CONTENTS", os.listdir(os.path.dirname(os.getcwd())))
+print("WORKING DIR IS", os.getcwd())
+print("WORKING DIR CONTENTS", os.listdir(os.getcwd()))
 
 with open('_data/results.yml', 'w') as file:
     print("inside open results")
-    contents = file.read()
-    print("Read in results data as", contents)
     yaml.dump(all_results.to_dict(orient='records'), file, sort_keys=False)
     print("after yaml dump call")
     
