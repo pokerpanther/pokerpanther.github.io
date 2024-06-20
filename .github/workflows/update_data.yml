@@ -30,11 +30,14 @@ jobs:
       run: python fetch_data.py  # Replace with the path to your Python script
     - name: check for changes
       run: git status
+    - name: add results
+      run: git add _data/results.yml
+    - name: check for changes
+      run: git status
+    - name: add rest
+      run: git add _data/*
     - name: Commit and push changes
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add _data/*
         if git diff --quiet; then
           echo "No changes to commit."
         else
