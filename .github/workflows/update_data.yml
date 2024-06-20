@@ -3,9 +3,6 @@ name: Update Results Data
 on:
   schedule:
     - cron: '0 0 * * *'  # This runs the workflow every day at midnight UTC
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
