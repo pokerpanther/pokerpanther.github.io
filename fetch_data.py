@@ -106,6 +106,7 @@ online_stats = calc_stats(online_results, "Online")
 live_stats = calc_stats(live_results, "Live")
 overall_stats = calc_stats(all_results, "All")
 
+print("WORKING DIR IS", os.getcwd())
 
 with open('_data/results.yml', 'w') as file:
     print("inside open results")
