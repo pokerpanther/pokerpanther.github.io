@@ -28,16 +28,10 @@ jobs:
         GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDS }}
       run: python fetch_data.py  # Replace with the path to your Python script
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add _data/*
-        if git diff --quiet; then
-          echo "No changes to commit."
-        else
-          git commit -m 'Update results data'
-          git push
-        fi
+    - name: add modified data
+      run: git add *
+
+    - name: Shell script
+      run: ./git-updated.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
