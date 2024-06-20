@@ -22,16 +22,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Make sure you have a requirements.txt file with your dependencies
+
     - name: Run update script
       env: 
         GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDS }}
       run: python fetch_data.py  # Replace with the path to your Python script
-    - name: check for changes
-      run: git status
+
     - name: add modified data
       run: git add *
-    - name: check for changes
-      run: git status
+
     - name: Shell script
       run: ./git-updated.sh
       env:
