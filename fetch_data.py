@@ -68,6 +68,12 @@ def convert_place(place_str):
     num = 6.022e23 # v big 
     if num_match:
         num = int(num_match[0])
+        suffixes = {1: 'st', 2: 'nd', 3: 'rd'}
+        if 10 <= num % 100 <= 20:
+            suffix = 'th'
+        else:
+            suffix = suffixes.get(num % 10, 'th')
+        place_str = str(num) + suffix         
     return {'display': place_str, 'sortable': num}
 
 gc = gspread.service_account(filename=local_creds_path)
