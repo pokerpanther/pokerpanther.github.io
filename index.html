@@ -2,10 +2,6 @@
 layout: default
 ---
 
-
-
-
-
 	<div class="wrap" id="home-middle">
 
 		<h1 class="rly-make">So how much money does a professional poker player <em style="color: {{ site.data.settings.color_settings.accent_color }};">really</em> make?</h1>
@@ -22,12 +18,11 @@ layout: default
 
 	</div>
 
-
 <script>
-	$(document).ready(function() {
-		$('body').attr('id', 'home-pg'); // allows for background img 
-		$('h1').attr('id','home-pg'); // makes text of h1 light
-		$('a.menu__list__item__link').attr('id','home-pg-header'); // makes menu light
-		$('a.header__title.active-link').attr('id','home-pg-header'); // makes site title light
-	});
+
+	$('body').attr('id', 'home-pg'); // allows for background img 
+	$('h1').attr('id','home-pg'); // makes text of h1 light
+	$('a.menu__list__item__link').attr('id','home-pg-header'); // makes menu light
+	$('a.header__title').attr('id','home-pg-header'); // makes site title light
+
 </script>
