@@ -46,13 +46,13 @@ def calc_stats(df, type):
 def convert_float(num_str):
     # convert num_str with chars like '$' to float
     try:
-        return float(re.sub(r'[^0-9.]', '', num_str))
+        return float(re.sub(r'[^-0-9.]', '', num_str))
     except:
         return num_str
 
 def convert_int(num_str):
     try:
-        return int(re.sub(r'[^0-9.]', '', num_str))
+        return int(re.sub(r'[^-0-9]', '', num_str))
     except:
         return num_str
 
