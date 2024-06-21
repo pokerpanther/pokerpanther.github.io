@@ -12,7 +12,6 @@ def get_google_creds():
     else: # running locally/manually
         creds_dict = json.load(open(local_creds_path))
     return creds_dict
-    
 
 def to_snake_case(input_string):
     # Replace spaces with underscores
