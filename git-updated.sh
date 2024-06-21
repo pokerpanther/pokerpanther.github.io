@@ -13,5 +13,7 @@ if [[ $exit_code -ne 0 ]]; then
 else
     echo "No changes to commit."
 fi
+curl -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${GITHUB_TOKEN}" https://api.github.com/repos/pokerpanther/pokerpanther.github.io/dispatches -d '{"event_type":"changes_detected"}'
 
+#TODO: move curl call inside if block to be run only when changes are made
 # git diff --cached --quiet returns 1 when there are staged changes  
