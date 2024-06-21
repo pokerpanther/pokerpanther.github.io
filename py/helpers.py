@@ -1,6 +1,18 @@
 import re
 from datetime import datetime
+import os
+import json 
 
+def get_google_creds():
+    creds_dict = {}
+    local_creds_path = '/Users/rasikaramanan/Documents/coding_projects/pokerpanther.github.io/google_creds.json'
+    if os.getenv("GOOGLE_CREDS"): # running from GitHub
+        creds_str = os.getenv("GOOGLE_CREDS")
+        creds_dict = json.loads(creds_str)
+    else: # running locally/manually
+        creds_dict = json.load(open(local_creds_path))
+    return creds_dict
+    
 
 def to_snake_case(input_string):
     # Replace spaces with underscores
@@ -19,7 +31,6 @@ def to_snake_case(input_string):
     snake_case_str = re.sub(r'_{2,}', '_', snake_case_str)
 
     return snake_case_str
-
 
 def calc_stats(df, type): 
     """ takes in a pandas df and a string representing 

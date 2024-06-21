@@ -2,23 +2,12 @@ import gspread
 import yaml
 import csv
 import pandas as pd
-import os
-import json 
 from py.helpers import *
 
 results_wkbk_url = "https://docs.google.com/spreadsheets/d/17Wa4KKc8OK_vU8T4SrZxivgjhVL9_PmW30AxQiZH5jM/edit#gid=0"
 results_sheet_num = 0 # first sheet
-local_creds_path = '/Users/rasikaramanan/Documents/coding_projects/pokerpanther.github.io/google_creds.json'
 
-
-creds_dict = {}
-
-if os.getenv("GOOGLE_CREDS"): # running from GitHub
-    creds_str = os.getenv("GOOGLE_CREDS")
-    creds_dict = json.loads(creds_str)
-else: # running locally/manually
-    creds_dict = json.load(open(local_creds_path))
-
+creds_dict = get_google_creds()
 gc = gspread.service_account_from_dict(creds_dict)
 wkbk = gc.open_by_url(results_wkbk_url)
 sheet = wkbk.get_worksheet(results_sheet_num) 
