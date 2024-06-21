@@ -15988,18 +15988,3 @@
     display: 90th
     sortable: 90
   bullets: 1
-- date:
-    display: 6/10/24
-    sortable: '2024-06-10'
-  type: Online
-  location: Ignition
-  game_type: Tournament
-  level_guarantee: HELLO WORLD
-  duration_min: 90
-  cash_in: 22.0
-  cash_out: 5000000.0
-  net: 4999978.0
-  place:
-    display: 1st
-    sortable: 1
-  bullets: 1
