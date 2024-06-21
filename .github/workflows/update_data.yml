@@ -26,7 +26,7 @@ jobs:
     - name: Run update script
       env: 
         GOOGLE_CREDS: ${{ secrets.GOOGLE_CREDS }}
-      run: python fetch_data.py  # Replace with the path to your Python script
+      run: python main.py  # Replace with the path to your Python script
 
     - name: add modified data
       run: git add *
