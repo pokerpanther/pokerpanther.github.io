@@ -30,15 +30,15 @@ featured_image: /images/from_khari/home.jpg
     <tbody>
         {% for tournament in site.data.results %}
         <tr>
-            <td class="dt-body-right" data-order="{{tournament.date.sortable}}">{{ tournament.date.display }}</td>
-            <td class="dt-body-left">{{ tournament.type }}</td>
-            <td class="dt-body-left">{{ tournament.location }}</td>
-            <td class="dt-body-left">{{ tournament.level_guarantee }}</td>
-            <td class="dt-body-right">{{ tournament.cash_in }}</td>
-            <td class="dt-body-right">{{ tournament.cash_out }}</td>
-            <td class="dt-body-right">{{ tournament.net }}</td>
-            <td class="dt-body-right" data-order="{{tournament.place.sortable}}">{{ tournament.place.display }}</td>
-            <td class="dt-body-center">{{ tournament.bullets }}</td>
+            <td data-order="{{tournament.date.sortable}}">{{ tournament.date.display }}</td>
+            <td>{{ tournament.type }}</td>
+            <td>{{ tournament.location }}</td>
+            <td>{{ tournament.level_guarantee }}</td>
+            <td>{{ tournament.cash_in }}</td>
+            <td>{{ tournament.cash_out }}</td>
+            <td>{{ tournament.net }}</td>
+            <td data-order="{{tournament.place.sortable}}">{{ tournament.place.display }}</td>
+            <td>{{ tournament.bullets }}</td>
         </tr>
         {% endfor %}
     </tbody>
@@ -79,16 +79,31 @@ featured_image: /images/from_khari/home.jpg
                     columnDefs: [
                         {
                             targets: [colIndex["Date"]],
-                            className: "nowrap"
+                            className: "dt-body-right nowrap"
+                        },
+                        {
+                            targets: [colIndex["Type"], 
+                                      colIndex["Location"], 
+                                      colIndex["Level Guarantee"]],
+                            className: "dt-body-left"
                         },
                         {
                             targets: [colIndex["Cash In"], 
-                                    colIndex["Cash Out"], 
-                                    colIndex["Net"]
-                                    ],
+                                      colIndex["Cash Out"], 
+                                      colIndex["Net"]
+                                     ],
+                            className: "dt-body-right",
                             render: function (data, type, row){
                                 return formatNumber(data, true);
                             }
+                        },
+                        {
+                            targets: [colIndex["Place"]],
+                            className: "dt-body-right nowrap"
+                        },
+                        {
+                            targets: [colIndex["Bullets"]],
+                            className: "dt-body-center"
                         }
                     ],
                     pageLength: 25,
