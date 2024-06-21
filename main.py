@@ -21,7 +21,7 @@ data_dicts = [dict(zip(col_names, row)) for row in data[1:]]
 all_results = pd.DataFrame(data_dicts)
 
 
-## Normalize data and write to results and col_name_map
+## Normalize data and write to results.yml and col_name_map.csv
 
 all_results['place'] = all_results['place'].apply(convert_place)
 all_results['date'] = all_results['date'].apply(convert_date)
@@ -40,7 +40,7 @@ with open('_data/col_name_map.csv', 'w', newline='') as file:
         writer.writerow([var_name, display_name])
 
 
-## Calculate aggregate statistics and write to file ##
+## Calculate aggregate statistics and write to stats.csv ##
 
 online_results = all_results[all_results["type"].str.strip().str.lower() == "online"].copy()
 live_results = all_results[all_results["type"].str.strip().str.lower() == "live"].copy()
