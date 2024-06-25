@@ -15988,3 +15988,933 @@
     display: 90th
     sortable: 90
   bullets: 1
+- date:
+    display: 6/11/24
+    sortable: '2024-06-11'
+  type: Live
+  location: Hardrock Casino
+  game_type: Tournament
+  level_guarantee: $20k Guaranteed Quad Stacks
+  duration_min: 210
+  cash_in: 500.0
+  cash_out: 0.0
+  net: -500.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 6/13/24
+    sortable: '2024-06-13'
+  type: Live
+  location: Harrah's Pompano
+  game_type: Tournament
+  level_guarantee: $100k Guaranteed, Day 1C
+  duration_min: 510
+  cash_in: 600.0
+  cash_out: 445.0
+  net: -155.0
+  place:
+    display: 54th
+    sortable: 54
+  bullets: 3
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Live
+  location: Dania Beach Casino
+  game_type: Tournament
+  level_guarantee: $50k Guaranteed
+  duration_min: 300
+  cash_in: 400.0
+  cash_out: 445.0
+  net: 45.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $215k Guaranteed
+  duration_min: 150
+  cash_in: 162.0
+  cash_out: 0.0
+  net: -162.0
+  place:
+    display: 363rd
+    sortable: 363
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10888 Guaranteed Crazy 8s
+  duration_min: 180
+  cash_in: 11.0
+  cash_out: 39.5
+  net: 28.5
+  place:
+    display: 56th
+    sortable: 56
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $15k Guaranteed
+  duration_min: 180
+  cash_in: 82.5
+  cash_out: 0.0
+  net: -82.5
+  place:
+    display: 277th
+    sortable: 277
+  bullets: 3
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $40k Guaranteed
+  duration_min: 360
+  cash_in: 162.0
+  cash_out: 1319.67
+  net: 1157.67
+  place:
+    display: 7th
+    sortable: 7
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $12k Guaranteed 6 Max
+  duration_min: 180
+  cash_in: 132.0
+  cash_out: 0.0
+  net: -132.0
+  place:
+    display: 106th
+    sortable: 106
+  bullets: 3
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Lucky 7s
+  duration_min: 150
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 230th
+    sortable: 230
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $45k Guaranteed Nightly
+  duration_min: 180
+  cash_in: 110.0
+  cash_out: 101.01
+  net: -8.99
+  place:
+    display: 183rd
+    sortable: 183
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $15888 Guaranteed Crazy 8's
+  duration_min: 180
+  cash_in: 33.0
+  cash_out: 27.31
+  net: -5.69
+  place:
+    display: 243rd
+    sortable: 243
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $12k Guaranteed Turbo
+  duration_min: 90
+  cash_in: 109.0
+  cash_out: 0.0
+  net: -109.0
+  place:
+    display: 71st
+    sortable: 71
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2500 Guaranteed ($5 PKO)
+  duration_min: 150
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 47th
+    sortable: 47
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 150
+  cash_in: 19.8
+  cash_out: 0.0
+  net: -19.8
+  place:
+    display: 247th
+    sortable: 247
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $29999 Guaranteed Major Niner
+  duration_min: 120
+  cash_in: 215.0
+  cash_out: 0.0
+  net: -215.0
+  place:
+    display: 57th
+    sortable: 57
+  bullets: 1
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed
+  duration_min: 180
+  cash_in: 55.0
+  cash_out: 50.03
+  net: -4.97
+  place:
+    display: 12th
+    sortable: 12
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2555 Guaranteed High 5s
+  duration_min: 150
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 56th
+    sortable: 56
+  bullets: 2
+- date:
+    display: 6/16/24
+    sortable: '2024-06-16'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $4k Guaranteed Fantastic 4s
+  duration_min: 120
+  cash_in: 22.0
+  cash_out: 65.4
+  net: 43.4
+  place:
+    display: 10th
+    sortable: 10
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $5k Guaranteed
+  duration_min: 60
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 189th
+    sortable: 189
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6888 Guaranteed Crazy 8's
+  duration_min: 120
+  cash_in: 16.5
+  cash_out: 85.35
+  net: 68.85
+  place:
+    display: 12th
+    sortable: 12
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $25k Guaranteed
+  duration_min: 240
+  cash_in: 109.0
+  cash_out: 306.71
+  net: 197.71
+  place:
+    display: 14th
+    sortable: 14
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed Extra Play
+  duration_min: 120
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 57th
+    sortable: 57
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($4 PKO)
+  duration_min: 90
+  cash_in: 33.0
+  cash_out: 2.0
+  net: -31.0
+  place:
+    display: 116th
+    sortable: 116
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed 6 Max
+  duration_min: 150
+  cash_in: 55.0
+  cash_out: 0.0
+  net: -55.0
+  place:
+    display: 57th
+    sortable: 57
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Low Roller
+  duration_min: 210
+  cash_in: 16.5
+  cash_out: 28.26
+  net: 11.76
+  place:
+    display: 120th
+    sortable: 120
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2888 Guaranteed ($2 Knockout)
+  duration_min: 120
+  cash_in: 11.0
+  cash_out: 2.0
+  net: -9.0
+  place:
+    display: 130th
+    sortable: 130
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $15k Guaranteed
+  duration_min: 300
+  cash_in: 82.5
+  cash_out: 122.11
+  net: 39.61
+  place:
+    display: 14th
+    sortable: 14
+  bullets: 3
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $30k Guaranteed
+  duration_min: 210
+  cash_in: 324.0
+  cash_out: 288.56
+  net: -35.44
+  place:
+    display: 40th
+    sortable: 40
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $12k Guaranteed 6 Max
+  duration_min: 210
+  cash_in: 44.0
+  cash_out: 0.0
+  net: -44.0
+  place:
+    display: 102nd
+    sortable: 102
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Lucky 7s
+  duration_min: 120
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 275th
+    sortable: 275
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $45k Guaranteed Nightly
+  duration_min: 180
+  cash_in: 110.0
+  cash_out: 97.3
+  net: -12.7
+  place:
+    display: 164th
+    sortable: 164
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $14888 Guaranteed Crazy 8's
+  duration_min: 150
+  cash_in: 16.5
+  cash_out: 0.0
+  net: -16.5
+  place:
+    display: 279th
+    sortable: 279
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series Super High Roller $65k Gtd
+  duration_min: 90
+  cash_in: 500.0
+  cash_out: 0.0
+  net: -500.0
+  place:
+    display: 64th
+    sortable: 64
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2500 Guaranteed ($5 PKO)
+  duration_min: 210
+  cash_in: 27.5
+  cash_out: 69.75
+  net: 42.25
+  place:
+    display: 12th
+    sortable: 12
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 210
+  cash_in: 9.9
+  cash_out: 0.0
+  net: -9.9
+  place:
+    display: 250th
+    sortable: 250
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $19999 Guaranteed Major Niner
+  duration_min: 90
+  cash_in: 162.0
+  cash_out: 0.0
+  net: -162.0
+  place:
+    display: 49th
+    sortable: 49
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $10k Guaranteed
+  duration_min: 240
+  cash_in: 164.0
+  cash_out: 143.04
+  net: -20.96
+  place:
+    display: 23rd
+    sortable: 23
+  bullets: 2
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed
+  duration_min: 60
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 47th
+    sortable: 47
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $3500 Guaranteed Semiturbo
+  duration_min: 90
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 79th
+    sortable: 79
+  bullets: 1
+- date:
+    display: 6/17/24
+    sortable: '2024-06-17'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $4k Guaranteed Fantastic 4s
+  duration_min: 60
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 62nd
+    sortable: 62
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $5k Guaranteed
+  duration_min: 30
+  cash_in: 11.0
+  cash_out: 0.0
+  net: -11.0
+  place:
+    display: 204th
+    sortable: 204
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6888 Guaranteed Crazy 8's
+  duration_min: 90
+  cash_in: 16.5
+  cash_out: 38.68
+  net: 22.18
+  place:
+    display: 63rd
+    sortable: 63
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $25k Guaranteed
+  duration_min: 150
+  cash_in: 109.0
+  cash_out: 0.0
+  net: -109.0
+  place:
+    display: 98th
+    sortable: 98
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed Extra Play
+  duration_min: 90
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 59th
+    sortable: 59
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($4 PKO)
+  duration_min: 90
+  cash_in: 16.5
+  cash_out: 2.0
+  net: -14.5
+  place:
+    display: 106th
+    sortable: 106
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed 6 Max
+  duration_min: 180
+  cash_in: 275.0
+  cash_out: 0.0
+  net: -275.0
+  place:
+    display: 54th
+    sortable: 54
+  bullets: 5
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Low Roller
+  duration_min: 270
+  cash_in: 16.5
+  cash_out: 54.18
+  net: 37.68
+  place:
+    display: 20th
+    sortable: 20
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2888 Guaranteed ($2 Knockout)
+  duration_min: 150
+  cash_in: 22.0
+  cash_out: 22.95
+  net: 0.95
+  place:
+    display: 56th
+    sortable: 56
+  bullets: 2
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $15k Guaranteed
+  duration_min: 150
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 196th
+    sortable: 196
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $30k Guaranteed
+  duration_min: 240
+  cash_in: 324.0
+  cash_out: 282.64
+  net: -41.36
+  place:
+    display: 54th
+    sortable: 54
+  bullets: 2
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $12k Guaranteed 6 Max
+  duration_min: 180
+  cash_in: 132.0
+  cash_out: 0.0
+  net: -132.0
+  place:
+    display: 78th
+    sortable: 78
+  bullets: 3
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Lucky 7s
+  duration_min: 180
+  cash_in: 22.0
+  cash_out: 52.48
+  net: 30.48
+  place:
+    display: 15th
+    sortable: 15
+  bullets: 2
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $45k Guaranteed Nightly
+  duration_min: 180
+  cash_in: 110.0
+  cash_out: 0.0
+  net: -110.0
+  place:
+    display: 295th
+    sortable: 295
+  bullets: 2
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MonsterStack Series - $40k Guaranteed
+  duration_min: 150
+  cash_in: 270.0
+  cash_out: 0.0
+  net: -270.0
+  place:
+    display: 75th
+    sortable: 75
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2500 Guaranteed ($5 PKO)
+  duration_min: 150
+  cash_in: 27.5
+  cash_out: 5.0
+  net: -22.5
+  place:
+    display: 41st
+    sortable: 41
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 90
+  cash_in: 9.9
+  cash_out: 0.0
+  net: -9.9
+  place:
+    display: 259th
+    sortable: 259
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $29999 Guaranteed Major Niner
+  duration_min: 120
+  cash_in: 215.0
+  cash_out: 0.0
+  net: -215.0
+  place:
+    display: 53rd
+    sortable: 53
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed
+  duration_min: 90
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 36th
+    sortable: 36
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2555 Guaranteed High 5s
+  duration_min: 60
+  cash_in: 11.0
+  cash_out: 0.0
+  net: -11.0
+  place:
+    display: 98th
+    sortable: 98
+  bullets: 1
+- date:
+    display: 6/20/24
+    sortable: '2024-06-20'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $4k Guaranteed Fantastic 4s
+  duration_min: 60
+  cash_in: 44.0
+  cash_out: 0.0
+  net: -44.0
+  place:
+    display: 66th
+    sortable: 66
+  bullets: 2
+- date:
+    display: 6/22/24
+    sortable: '2024-06-22'
+  type: Live
+  location: Orleans Casino
+  game_type: Tournament
+  level_guarantee: $40k Guaranteed Mega Stack
+  duration_min: 900
+  cash_in: 800.0
+  cash_out: 6375.0
+  net: 5575.0
+  place:
+    display: 4th
+    sortable: 4
+  bullets: 2
+- date:
+    display: 6/23/24
+    sortable: '2024-06-23'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: 'WSOP #54: $1500 Millionaire Maker'
+  duration_min: 540
+  cash_in: 1350.0
+  cash_out: 0.0
+  net: -1350.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
