@@ -16918,3 +16918,33 @@
     display: DNC
     sortable: 6.022e+23
   bullets: 1
+- date:
+    display: 6/24/24
+    sortable: '2024-06-24'
+  type: Live
+  location: Aria Casino
+  game_type: Tournament
+  level_guarantee: $200k Guaranteed
+  duration_min: 720
+  cash_in: 800.0
+  cash_out: 4280.0
+  net: 3480.0
+  place:
+    display: 19th
+    sortable: 19
+  bullets: 1
+- date:
+    display: 6/25/24
+    sortable: '2024-06-25'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: 'WSOP #62: $600 PokerNews Deepstack Championship'
+  duration_min: 720
+  cash_in: 600.0
+  cash_out: 1201.0
+  net: 601.0
+  place:
+    display: 702nd
+    sortable: 702
+  bullets: 1
