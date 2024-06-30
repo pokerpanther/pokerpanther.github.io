@@ -16948,3 +16948,63 @@
     display: 702nd
     sortable: 702
   bullets: 1
+- date:
+    display: 6/27/24
+    sortable: '2024-06-27'
+  type: Live
+  location: MGM Grand
+  game_type: Tournament
+  level_guarantee: $40k Guaranteed Grand Stack
+  duration_min: 330
+  cash_in: 800.0
+  cash_out: 0.0
+  net: -800.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 6/27/24
+    sortable: '2024-06-27'
+  type: Live
+  location: Orleans Casino
+  game_type: Tournament
+  level_guarantee: $500k Guaranteed Summer Open Main Event, Day 1D
+  duration_min: 330
+  cash_in: 1200.0
+  cash_out: 0.0
+  net: -1200.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 6/28/24
+    sortable: '2024-06-28'
+  type: Live
+  location: The Venetian
+  game_type: Tournament
+  level_guarantee: $750k Guaranteed Ultimate Stack, Day 1B
+  duration_min: 300
+  cash_in: 1440.0
+  cash_out: 0.0
+  net: -1440.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 6/28/24
+    sortable: '2024-06-28'
+  type: Live
+  location: Orleans Casino
+  game_type: Tournament
+  level_guarantee: $500k Guaranteed Summer Open Main Event, Day 1D
+  duration_min: 390
+  cash_in: 1200.0
+  cash_out: 0.0
+  net: -1200.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
