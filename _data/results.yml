@@ -16027,8 +16027,8 @@
   level_guarantee: $50k Guaranteed
   duration_min: 300
   cash_in: 400.0
-  cash_out: 445.0
-  net: 45.0
+  cash_out: 0.0
+  net: -400.0
   place:
     display: DNC
     sortable: 6.022e+23
@@ -17008,3 +17008,78 @@
     display: DNC
     sortable: 6.022e+23
   bullets: 2
+- date:
+    display: 6/29/24
+    sortable: '2024-06-29'
+  type: Live
+  location: Resorts World Vegas
+  game_type: Tournament
+  level_guarantee: Road to the NAPT $100k Guaranteed, Day 1C
+  duration_min: 720
+  cash_in: 400.0
+  cash_out: 2120.0
+  net: 1720.0
+  place:
+    display: 16th
+    sortable: 16
+  bullets: 1
+- date:
+    display: 6/30/24
+    sortable: '2024-06-30'
+  type: Online
+  location: WSOP NV Online
+  game_type: Tournament
+  level_guarantee: 'Online Bracelet Event #15: $500 NLH Deepstack'
+  duration_min: 150
+  cash_in: 500.0
+  cash_out: 0.0
+  net: -500.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 6/30/24
+    sortable: '2024-06-30'
+  type: Online
+  location: WSOP NV Online
+  game_type: Tournament
+  level_guarantee: 'OC Event #116: $50k Gtd NLH Players Appreciation'
+  duration_min: 45
+  cash_in: 55.0
+  cash_out: 0.0
+  net: -55.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 6/30/24
+    sortable: '2024-06-30'
+  type: Online
+  location: WSOP NV Online
+  game_type: Tournament
+  level_guarantee: 'OC Event #117: $20k Gtd Sunday 6 Max'
+  duration_min: 45
+  cash_in: 200.0
+  cash_out: 0.0
+  net: -200.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 7/1/24
+    sortable: '2024-07-01'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: 'WSOP #75: $1k Tag Team NLH'
+  duration_min: 180
+  cash_in: 500.0
+  cash_out: 0.0
+  net: -500.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
