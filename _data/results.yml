@@ -17083,3 +17083,48 @@
     display: DNC
     sortable: 6.022e+23
   bullets: 1
+- date:
+    display: 7/2/24
+    sortable: '2024-07-02'
+  type: Live
+  location: MGM Grand
+  game_type: Tournament
+  level_guarantee: $1M Guaranteed Moneymaker Main Event, Day 1A
+  duration_min: 150
+  cash_in: 1700.0
+  cash_out: 0.0
+  net: -1700.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 7/3/24
+    sortable: '2024-07-03'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: 'WSOP #80: $800 Independence Day Event Day 1A'
+  duration_min: 870
+  cash_in: 1600.0
+  cash_out: 3200.0
+  net: 1600.0
+  place:
+    display: 211th
+    sortable: 211
+  bullets: 2
+- date:
+    display: 7/4/24
+    sortable: '2024-07-04'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: WSOP Main Event
+  duration_min: 780
+  cash_in: 7150.0
+  cash_out: 0.0
+  net: -7150.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
