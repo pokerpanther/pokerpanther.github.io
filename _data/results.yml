@@ -17128,3 +17128,48 @@
     display: DNC
     sortable: 6.022e+23
   bullets: 1
+- date:
+    display: 7/8/24
+    sortable: '2024-07-08'
+  type: Live
+  location: WSOP
+  game_type: Tournament
+  level_guarantee: 'WSOP #84: $600 NLH Ultra Stack Day 1A'
+  duration_min: 420
+  cash_in: 1200.0
+  cash_out: 0.0
+  net: -1200.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 7/9/24
+    sortable: '2024-07-09'
+  type: Live
+  location: Aria Casino
+  game_type: Tournament
+  level_guarantee: $200k Guaranteed
+  duration_min: 300
+  cash_in: 800.0
+  cash_out: 0.0
+  net: -800.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 7/10/24
+    sortable: '2024-07-10'
+  type: Live
+  location: Orleans Casino
+  game_type: Tournament
+  level_guarantee: $30k Guaranteed Mega Stack
+  duration_min: 315
+  cash_in: 600.0
+  cash_out: 0.0
+  net: -600.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
