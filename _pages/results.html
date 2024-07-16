@@ -140,7 +140,7 @@ featured_image: /images/from_khari/home.jpg
 
             dropdown.find('input').on('change', function () {
                 var selectedValues = dropdown.find('input:checked').map(function () {
-                    return this.value;
+                    return '^' + this.value + '$';
                 }).get();
 
                 if (selectedValues.length > 0) {
