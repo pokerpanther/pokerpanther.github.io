@@ -17159,8 +17159,8 @@
     sortable: 6.022e+23
   bullets: 1
 - date:
-    display: 7/10/24
-    sortable: '2024-07-10'
+    display: 7/11/24
+    sortable: '2024-07-11'
   type: Live
   location: Orleans Casino
   game_type: Tournament
@@ -17173,3 +17173,363 @@
     display: DNC
     sortable: 6.022e+23
   bullets: 2
+- date:
+    display: 7/13/24
+    sortable: '2024-07-13'
+  type: Live
+  location: PBKC
+  game_type: Tournament
+  level_guarantee: $100k Guaranteed, Day 1D
+  duration_min: 840
+  cash_in: 300.0
+  cash_out: 950.0
+  net: 650.0
+  place:
+    display: 31st
+    sortable: 31
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'MLB All Star Series #25: $5k Guaranteed MS'
+  duration_min: 300
+  cash_in: 16.5
+  cash_out: 43.36
+  net: 26.86
+  place:
+    display: 38th
+    sortable: 38
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: Triple Header Warm Up Event $10k Guaranteed
+  duration_min: 150
+  cash_in: 11.0
+  cash_out: 26.24
+  net: 15.24
+  place:
+    display: 129th
+    sortable: 129
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: Triple Header Kickoff Event $75k Guaranteed
+  duration_min: 240
+  cash_in: 109.0
+  cash_out: 0.0
+  net: -109.0
+  place:
+    display: 210th
+    sortable: 210
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $4k Guaranteed Extra Play
+  duration_min: 240
+  cash_in: 44.0
+  cash_out: 38.47
+  net: -5.53
+  place:
+    display: 42nd
+    sortable: 42
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MLB All Star Mini Main Event, $50k Guaranteed
+  duration_min: 60
+  cash_in: 164.0
+  cash_out: 0.0
+  net: -164.0
+  place:
+    display: 241st
+    sortable: 241
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($4 PKO)
+  duration_min: 120
+  cash_in: 33.0
+  cash_out: 23.7
+  net: -9.3
+  place:
+    display: 50th
+    sortable: 50
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MLB All Star Series Edition, $220k Guaranteed
+  duration_min: 90
+  cash_in: 162.0
+  cash_out: 0.0
+  net: -162.0
+  place:
+    display: 642nd
+    sortable: 642
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10k Guaranteed Low Roller
+  duration_min: 180
+  cash_in: 33.0
+  cash_out: 30.86
+  net: -2.14
+  place:
+    display: 134th
+    sortable: 134
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6k Guaranteed
+  duration_min: 45
+  cash_in: 33.0
+  cash_out: 0.0
+  net: -33.0
+  place:
+    display: 120th
+    sortable: 120
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10888 Guaranteed Crazy 8s
+  duration_min: 45
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 472nd
+    sortable: 472
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MLB All Star Series Main Event, $180k Guaranteed
+  duration_min: 90
+  cash_in: 270.0
+  cash_out: 0.0
+  net: -270.0
+  place:
+    display: 204th
+    sortable: 204
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed Monster Stack
+  duration_min: 300
+  cash_in: 55.0
+  cash_out: 49.33
+  net: -5.67
+  place:
+    display: 131st
+    sortable: 131
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $30k Guaranteed Mega Stack
+  duration_min: 360
+  cash_in: 324.0
+  cash_out: 455.77
+  net: 131.77
+  place:
+    display: 14th
+    sortable: 14
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10k Guaranteed 6 Max Monsterstack
+  duration_min: 150
+  cash_in: 176.0
+  cash_out: 0.0
+  net: -176.0
+  place:
+    display: 85th
+    sortable: 85
+  bullets: 4
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MLB All Star Micro Main Event, $18k Guaranteed
+  duration_min: 150
+  cash_in: 27.5
+  cash_out: 0.0
+  net: -27.5
+  place:
+    display: 145th
+    sortable: 145
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: Nightly $40k Guaranteed
+  duration_min: 240
+  cash_in: 55.0
+  cash_out: 0.0
+  net: -55.0
+  place:
+    display: 159th
+    sortable: 159
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: MLB All Star Week Series Edition $40k Guaranteed
+  duration_min: 240
+  cash_in: 110.0
+  cash_out: 0.0
+  net: -110.0
+  place:
+    display: 269th
+    sortable: 269
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2500 Guaranteed ($5 PKO)
+  duration_min: 120
+  cash_in: 55.0
+  cash_out: 0.0
+  net: -55.0
+  place:
+    display: 55th
+    sortable: 55
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 120
+  cash_in: 49.5
+  cash_out: 0.0
+  net: -49.5
+  place:
+    display: 254th
+    sortable: 254
+  bullets: 5
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'MLB All Star Series #29: $30k Guaranteed Turbo'
+  duration_min: 60
+  cash_in: 162.0
+  cash_out: 0.0
+  net: -162.0
+  place:
+    display: 84th
+    sortable: 84
+  bullets: 1
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed Monster Stack
+  duration_min: 120
+  cash_in: 164.0
+  cash_out: 0.0
+  net: -164.0
+  place:
+    display: 63rd
+    sortable: 63
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed
+  duration_min: 210
+  cash_in: 55.0
+  cash_out: 38.7
+  net: -16.3
+  place:
+    display: 18th
+    sortable: 18
+  bullets: 2
+- date:
+    display: 7/14/24
+    sortable: '2024-07-14'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($10k PKO)
+  duration_min: 120
+  cash_in: 33.0
+  cash_out: 5.0
+  net: -28.0
+  place:
+    display: 68th
+    sortable: 68
+  bullets: 1
