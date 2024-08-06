@@ -18253,3 +18253,663 @@
     display: 7th
     sortable: 7
   bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $4k Guaranteed Monster Stack
+  duration_min: 45
+  cash_in: 11.0
+  cash_out: 0.0
+  net: -11.0
+  place:
+    display: 125th
+    sortable: 125
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $500 Guaranteed Mystery Knockout
+  duration_min: 150
+  cash_in: 8.8
+  cash_out: 20.1
+  net: 11.3
+  place:
+    display: 31st
+    sortable: 31
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6888 Guaranteed Crazy 8's
+  duration_min: 150
+  cash_in: 33.0
+  cash_out: 29.24
+  net: -3.76
+  place:
+    display: 112th
+    sortable: 112
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $20k Guaranteed Monster Stack
+  duration_min: 240
+  cash_in: 218.0
+  cash_out: 269.12
+  net: 51.12
+  place:
+    display: 15th
+    sortable: 15
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed Mystery Knockout Extra Play
+  duration_min: 120
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 75th
+    sortable: 75
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($4 PKO)
+  duration_min: 240
+  cash_in: 16.5
+  cash_out: 36.61
+  net: 20.11
+  place:
+    display: 20th
+    sortable: 20
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed 6 Max
+  duration_min: 240
+  cash_in: 55.0
+  cash_out: 139.65
+  net: 84.65
+  place:
+    display: 18th
+    sortable: 18
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Low Roller
+  duration_min: 240
+  cash_in: 49.5
+  cash_out: 28.43
+  net: -21.07
+  place:
+    display: 87th
+    sortable: 87
+  bullets: 3
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6k Guaranteed
+  duration_min: 90
+  cash_in: 66.0
+  cash_out: 0.0
+  net: -66.0
+  place:
+    display: 86th
+    sortable: 86
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2888 Guaranteed ($2 Knockout)
+  duration_min: 120
+  cash_in: 11.0
+  cash_out: 0.0
+  net: -11.0
+  place:
+    display: 132nd
+    sortable: 132
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'SMPO #47: $20k Guaranteed'
+  duration_min: 180
+  cash_in: 55.0
+  cash_out: 0.0
+  net: -55.0
+  place:
+    display: 243rd
+    sortable: 243
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10k Guaranteed 6 Max Monsterstack
+  duration_min: 240
+  cash_in: 88.0
+  cash_out: 116.34
+  net: 28.34
+  place:
+    display: 17th
+    sortable: 17
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Lucky 7s
+  duration_min: 180
+  cash_in: 22.0
+  cash_out: 23.31
+  net: 1.31
+  place:
+    display: 94th
+    sortable: 94
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: Nightly Mystery Knockout $25k Guaranteed
+  duration_min: 150
+  cash_in: 109.0
+  cash_out: 0.0
+  net: -109.0
+  place:
+    display: 110th
+    sortable: 110
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: SMPO Edition Nightly $45k Guaranteed
+  duration_min: 150
+  cash_in: 110.0
+  cash_out: 0.0
+  net: -110.0
+  place:
+    display: 246th
+    sortable: 246
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $14888 Guaranteed Crazy 8's
+  duration_min: 120
+  cash_in: 49.5
+  cash_out: 0.0
+  net: -49.5
+  place:
+    display: 285th
+    sortable: 285
+  bullets: 3
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2500 Guaranteed ($5 PKO)
+  duration_min: 300
+  cash_in: 27.5
+  cash_out: 240.01
+  net: 212.51
+  place:
+    display: 4th
+    sortable: 4
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 120
+  cash_in: 9.9
+  cash_out: 0.0
+  net: -9.9
+  place:
+    display: 188th
+    sortable: 188
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'SMPO #50: $30k Guaranteed 50/50'
+  duration_min: 210
+  cash_in: 270.0
+  cash_out: 555.57
+  net: 285.57
+  place:
+    display: 21st
+    sortable: 21
+  bullets: 1
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2555 Guaranteed High 5s
+  duration_min: 150
+  cash_in: 22.0
+  cash_out: 108.2
+  net: 86.2
+  place:
+    display: 6th
+    sortable: 6
+  bullets: 2
+- date:
+    display: 7/30/24
+    sortable: '2024-07-30'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $1500 Guaranteed Mystery Knockout Turbo
+  duration_min: 210
+  cash_in: 16.5
+  cash_out: 305.32
+  net: 288.82
+  place:
+    display: 3rd
+    sortable: 3
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $20k Guaranteed Monster Stack
+  duration_min: 60
+  cash_in: 109.0
+  cash_out: 0.0
+  net: -109.0
+  place:
+    display: 77th
+    sortable: 77
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2k Guaranteed Mystery Knockout Extra Play
+  duration_min: 180
+  cash_in: 22.0
+  cash_out: 0.0
+  net: -22.0
+  place:
+    display: 68th
+    sortable: 68
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($4 PKO)
+  duration_min: 120
+  cash_in: 16.5
+  cash_out: 0.0
+  net: -16.5
+  place:
+    display: 53rd
+    sortable: 53
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed 6 Max
+  duration_min: 240
+  cash_in: 110.0
+  cash_out: 366.25
+  net: 256.25
+  place:
+    display: 9th
+    sortable: 9
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $7k Guaranteed Low Roller
+  duration_min: 210
+  cash_in: 16.5
+  cash_out: 37.54
+  net: 21.04
+  place:
+    display: 46th
+    sortable: 46
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6k Guaranteed
+  duration_min: 120
+  cash_in: 66.0
+  cash_out: 0.0
+  net: -66.0
+  place:
+    display: 79th
+    sortable: 79
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2888 Guaranteed ($2 Knockout)
+  duration_min: 150
+  cash_in: 11.0
+  cash_out: 2.0
+  net: -9.0
+  place:
+    display: 108th
+    sortable: 108
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $12k Guaranteed Monster Stack
+  duration_min: 210
+  cash_in: 27.5
+  cash_out: 47.88
+  net: 20.38
+  place:
+    display: 111th
+    sortable: 111
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'SMPO #52: $30k Guaranteed ($50 PKO)'
+  duration_min: 330
+  cash_in: 270.0
+  cash_out: 5718.75
+  net: 5448.75
+  place:
+    display: 2nd
+    sortable: 2
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $10k Guaranteed 6 Max Monsterstack
+  duration_min: 210
+  cash_in: 88.0
+  cash_out: 160.16
+  net: 72.16
+  place:
+    display: 10th
+    sortable: 10
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $5k Guaranteed Mystery Knockout
+  duration_min: 180
+  cash_in: 44.0
+  cash_out: 0.0
+  net: -44.0
+  place:
+    display: 214th
+    sortable: 214
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'SMPO #53: $30k Guaranteed'
+  duration_min: 120
+  cash_in: 82.0
+  cash_out: 0.0
+  net: -82.0
+  place:
+    display: 114th
+    sortable: 114
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: Nightly Mystery Knockout $25k Guaranteed
+  duration_min: 240
+  cash_in: 218.0
+  cash_out: 260.52
+  net: 42.52
+  place:
+    display: 18th
+    sortable: 18
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: SMPO Edition Nightly $45k Guaranteed
+  duration_min: 180
+  cash_in: 110.0
+  cash_out: 108.0
+  net: -2.0
+  place:
+    display: 131st
+    sortable: 131
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $14888 Guaranteed Crazy 8's
+  duration_min: 60
+  cash_in: 16.5
+  cash_out: 0.0
+  net: -16.5
+  place:
+    display: 308th
+    sortable: 308
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: 'SMPO #54: $50k Guaranteed High Roller'
+  duration_min: 120
+  cash_in: 325.0
+  cash_out: 0.0
+  net: -325.0
+  place:
+    display: 67th
+    sortable: 67
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $6999 Guaranteed Minor Niner
+  duration_min: 120
+  cash_in: 9.9
+  cash_out: 19.68
+  net: 9.78
+  place:
+    display: 114th
+    sortable: 114
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $2555 Guaranteed High 5s
+  duration_min: 120
+  cash_in: 11.0
+  cash_out: 38.01
+  net: 27.01
+  place:
+    display: 11th
+    sortable: 11
+  bullets: 1
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $3k Guaranteed ($10k PKO)
+  duration_min: 240
+  cash_in: 66.0
+  cash_out: 130.5
+  net: 64.5
+  place:
+    display: 9th
+    sortable: 9
+  bullets: 2
+- date:
+    display: 7/31/24
+    sortable: '2024-07-31'
+  type: Online
+  location: Ignition
+  game_type: Tournament
+  level_guarantee: $1500 Guaranteed Mystery Knockout Turbo
+  duration_min: 180
+  cash_in: 16.5
+  cash_out: 579.56
+  net: 563.06
+  place:
+    display: 3rd
+    sortable: 3
+  bullets: 1
+- date:
+    display: 8/3/24
+    sortable: '2024-08-03'
+  type: Live
+  location: Hardrock Casino
+  game_type: Tournament
+  level_guarantee: 'SHRPO #1: $1M Gtd Day 1G'
+  duration_min: 390
+  cash_in: 800.0
+  cash_out: 0.0
+  net: -800.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 2
+- date:
+    display: 8/3/24
+    sortable: '2024-08-03'
+  type: Live
+  location: Hardrock Casino
+  game_type: Tournament
+  level_guarantee: 'SHRPO #1: $1M Gtd Day 1H'
+  duration_min: 210
+  cash_in: 400.0
+  cash_out: 0.0
+  net: -400.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 8/4/24
+    sortable: '2024-08-04'
+  type: Live
+  location: Hardrock Casino
+  game_type: Tournament
+  level_guarantee: 'SHRPO #13: $100k Gtd'
+  duration_min: 480
+  cash_in: 800.0
+  cash_out: 660.0
+  net: -140.0
+  place:
+    display: 64th
+    sortable: 64
+  bullets: 2
