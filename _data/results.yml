@@ -20578,3 +20578,48 @@
     display: 7th
     sortable: 7
   bullets: 1
+- date:
+    display: 8/22/24
+    sortable: '2024-08-22'
+  type: Live
+  location: Joa Gujan Mestras
+  game_type: Tournament
+  level_guarantee: 'UDSO #8: Progressive Knockout'
+  duration_min: 75
+  cash_in: 165.0
+  cash_out: 0.0
+  net: -165.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
+- date:
+    display: 8/23/24
+    sortable: '2024-08-23'
+  type: Live
+  location: Joa Gujan Mestras
+  game_type: Tournament
+  level_guarantee: UDSO Main Event
+  duration_min: 960
+  cash_in: 1210.0
+  cash_out: 1232.0
+  net: 22.0
+  place:
+    display: 71st
+    sortable: 71
+  bullets: 2
+- date:
+    display: 8/27/24
+    sortable: '2024-08-27'
+  type: Live
+  location: Dania Beach Casino
+  game_type: Tournament
+  level_guarantee: $25k Guaranteed
+  duration_min: 180
+  cash_in: 350.0
+  cash_out: 0.0
+  net: -350.0
+  place:
+    display: DNC
+    sortable: 6.022e+23
+  bullets: 1
