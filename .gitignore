@@ -4,3 +4,4 @@ _site/
 google_creds.json
 _data/results.yml
 __pycache__
+.vscode/
