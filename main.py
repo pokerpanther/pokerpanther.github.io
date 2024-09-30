@@ -2,6 +2,8 @@ import gspread
 import yaml
 import csv
 import pandas as pd
+import time
+import sys
 from py.helpers import *
 
 results_wkbk_url = "https://docs.google.com/spreadsheets/d/17Wa4KKc8OK_vU8T4SrZxivgjhVL9_PmW30AxQiZH5jM/edit#gid=0"
@@ -9,11 +11,24 @@ results_sheet_num = 0 # first sheet
 
 
 ## Fetch data from Google Drive and store as pandas df ##
+sheet = None
+for attempt in range(3): # try to fetch the worksheet 3 times
+    try:
+        creds_dict = get_google_creds()
+        gc = gspread.service_account_from_dict(creds_dict)
+        wkbk = gc.open_by_url(results_wkbk_url)
+        sheet = wkbk.get_worksheet(results_sheet_num) 
+        break
+    except Exception as e:
+        print(f"Attempt {attempt + 1} failed.")
+        print(f"Exception type: {type(e).__name__}")  # Print the type of exception
+        print(f"Exception message: {str(e)}")  # Print the exception message
+        time.sleep(30) # wait 30 secs between attempts
 
-creds_dict = get_google_creds()
-gc = gspread.service_account_from_dict(creds_dict)
-wkbk = gc.open_by_url(results_wkbk_url)
-sheet = wkbk.get_worksheet(results_sheet_num) 
+if sheet is None: # if all 3 attempts failed 
+    print("Failed to retrieve data after multiple attempts.")
+    sys.exit(1)
+
 data = sheet.get_all_values() # data is a list of lists
 orig_col_names = data[0] # first list is col names
 col_names = [to_snake_case(s) for s in orig_col_names]
