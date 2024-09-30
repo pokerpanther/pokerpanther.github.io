@@ -10,7 +10,8 @@ def get_google_creds():
         creds_str = os.getenv("GOOGLE_CREDS")
         creds_dict = json.loads(creds_str)
     else: # running locally/manually
-        creds_dict = json.load(open(local_creds_path))
+        with open(local_creds_path, 'r') as f:
+            creds_dict = json.load(f)
     return creds_dict
 
 def to_snake_case(input_string):
